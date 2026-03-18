@@ -12,7 +12,7 @@ export async function generateMetadata({ params, searchParams }: PageProps): Pro
   const name = decodeURIComponent(isim);
   const message = m ? decodeURIComponent(m) : undefined;
 
-  const description = message || `${name} sana bayram tebriği gönderiyor. Bayramın mübarek olsun!`;
+  const description = message || `${name} sana bayram kartı gönderiyor. Bayramın mübarek olsun!`;
   const title = name ? `Ramazan Bayramınız Mübarek Olsun — ${name}` : "Ramazan Bayramınız Mübarek Olsun";
 
   return {

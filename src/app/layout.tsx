@@ -16,14 +16,14 @@ const adsensePubId = process.env.NEXT_PUBLIC_ADSENSE_PUB_ID;
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Bayram Tebriği Oluştur | Ramazan Bayramı 2026",
+    default: "Dijital Bayram | Ramazan Bayramı 2026",
     template: `%s | ${SITE_NAME}`,
   },
   description:
-    "Sevdiklerine özel bayram tebriği oluştur, WhatsApp'tan gönder. Bayram mesajları ve namaz saatleri.",
+    "Dijital Bayram — sevdiklerine özel bayram kartı oluştur, WhatsApp'tan gönder. Bayram mesajları ve namaz saatleri.",
   keywords: [
     "ramazan bayramı",
-    "bayram tebriği",
+    "dijital bayram",
     "bayram mesajları",
     "bayram namazı saati",
     "hayırlı bayramlar",
@@ -33,14 +33,14 @@ export const metadata: Metadata = {
     type: "website",
     locale: "tr_TR",
     siteName: SITE_NAME,
-    title: "Bayram Tebriği Oluştur | Ramazan Bayramı 2026",
-    description: "Sevdiklerine özel bayram tebriği oluştur, WhatsApp'tan gönder.",
+    title: "Dijital Bayram | Ramazan Bayramı 2026",
+    description: "Dijital Bayram — sevdiklerine özel bayram kartı oluştur, WhatsApp'tan gönder.",
     images: [{ url: "/api/og", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bayram Tebriği Oluştur | Ramazan Bayramı 2026",
-    description: "Sevdiklerine özel bayram tebriği oluştur, WhatsApp'tan gönder.",
+    title: "Dijital Bayram | Ramazan Bayramı 2026",
+    description: "Dijital Bayram — sevdiklerine özel bayram kartı oluştur, WhatsApp'tan gönder.",
     images: ["/api/og"],
   },
   alternates: {
@@ -74,7 +74,7 @@ export default function RootLayout({
       <body className={`${inter.className} antialiased min-h-screen`}>
         <StarryBackground />
         <Header />
-        <main className="relative z-10 pt-14">{children}</main>
+        <main className="relative z-10 pt-14 pb-16 sm:pb-0">{children}</main>
         <Analytics />
         <SpeedInsights />
       </body>

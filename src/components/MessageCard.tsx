@@ -3,7 +3,7 @@
 import { useState, useCallback } from "react";
 import { motion } from "framer-motion";
 import { Copy, Send, Check } from "lucide-react";
-import { getWhatsAppUrl, copyToClipboard } from "@/lib/share";
+import { openWhatsApp, copyToClipboard } from "@/lib/share";
 import type { BayramMesaj } from "@/lib/bayram-mesajlari";
 
 interface MessageCardProps {
@@ -23,8 +23,7 @@ export default function MessageCard({ mesaj, index }: MessageCardProps) {
   }, [mesaj.text]);
 
   const handleWhatsApp = useCallback(() => {
-    const url = getWhatsAppUrl(mesaj.text);
-    window.open(url, "_blank");
+    openWhatsApp(mesaj.text);
   }, [mesaj.text]);
 
   return (

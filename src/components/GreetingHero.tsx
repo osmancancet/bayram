@@ -25,74 +25,49 @@ export default function GreetingHero({ name, message }: GreetingHeroProps) {
         transition={{ type: "spring", damping: 8, stiffness: 60, delay: 0.1 }}
       >
         <motion.div
-          animate={{ y: [0, -8, 0], rotate: [0, 5, 0, -5, 0] }}
+          animate={{ y: [0, -8, 0] }}
           transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
         >
           <Moon size={56} className="text-gold fill-gold/20" />
         </motion.div>
       </motion.div>
 
-      {/* Decorative stars */}
+      {/* Decorative stars — reduced to 3 */}
       <motion.div
         className="flex items-center gap-4"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.2 }}
       >
-        {[12, 8, 16, 24, 16, 8, 12].map((size, i) => (
+        {[12, 20, 12].map((size, i) => (
           <motion.div
             key={i}
-            initial={{ opacity: 0, scale: 0, rotate: -180 }}
-            animate={{ opacity: 1, scale: 1, rotate: 0 }}
-            transition={{ delay: 0.2 + i * 0.08, type: "spring", stiffness: 200 }}
+            initial={{ opacity: 0, scale: 0 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.2 + i * 0.1, type: "spring", stiffness: 200 }}
           >
-            <motion.div
-              animate={{ rotate: 360 }}
-              transition={{ duration: 8 + i * 2, repeat: Infinity, ease: "linear" }}
-            >
-              <Star
-                size={size}
-                className={i === 3 ? "text-gold-light fill-gold-light" : "text-gold/60 fill-gold/40"}
-              />
-            </motion.div>
+            <Star
+              size={size}
+              className={i === 1 ? "text-gold-light fill-gold-light" : "text-gold/60 fill-gold/40"}
+            />
           </motion.div>
         ))}
       </motion.div>
 
-      {/* Main greeting */}
+      {/* Main greeting — static glow, no textShadow animation */}
       <motion.h1
         className="text-4xl sm:text-5xl md:text-7xl font-bold leading-tight"
         initial={{ opacity: 0, y: 60, scale: 0.7 }}
         animate={{ opacity: 1, y: 0, scale: 1 }}
         transition={{ type: "spring", damping: 12, stiffness: 80, delay: 0.4 }}
       >
-        <motion.span
-          className="text-shimmer bg-gradient-to-r from-gold via-gold-light to-gold bg-clip-text text-transparent inline-block"
-          animate={{
-            textShadow: [
-              "0 0 20px rgba(245,158,11,0.3)",
-              "0 0 60px rgba(245,158,11,0.5)",
-              "0 0 20px rgba(245,158,11,0.3)",
-            ],
-          }}
-          transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-        >
+        <span className="text-shimmer bg-gradient-to-r from-gold via-gold-light to-gold bg-clip-text text-transparent inline-block">
           Ramazan Bayramınız
-        </motion.span>
+        </span>
         <br />
-        <motion.span
-          className="text-shimmer bg-gradient-to-r from-gold-light via-gold to-gold-light bg-clip-text text-transparent inline-block"
-          animate={{
-            textShadow: [
-              "0 0 20px rgba(245,158,11,0.3)",
-              "0 0 60px rgba(245,158,11,0.5)",
-              "0 0 20px rgba(245,158,11,0.3)",
-            ],
-          }}
-          transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
-        >
+        <span className="text-shimmer bg-gradient-to-r from-gold-light via-gold to-gold-light bg-clip-text text-transparent inline-block">
           Mübarek Olsun
-        </motion.span>
+        </span>
       </motion.h1>
 
       {/* Decorative line */}
@@ -133,7 +108,7 @@ export default function GreetingHero({ name, message }: GreetingHeroProps) {
         {message ? `\u201C${displayMessage}\u201D` : displayMessage}
       </motion.p>
 
-      {/* Sender signature — small, elegant */}
+      {/* Sender signature */}
       <motion.p
         className="text-white/50 text-sm sm:text-base font-medium tracking-wide"
         initial={{ opacity: 0 }}
@@ -142,16 +117,6 @@ export default function GreetingHero({ name, message }: GreetingHeroProps) {
       >
         — {name}
       </motion.p>
-
-      {/* Glowing orb */}
-      <motion.div
-        className="w-32 h-32 rounded-full absolute -z-10"
-        style={{
-          background: "radial-gradient(circle, rgba(245,158,11,0.15) 0%, transparent 70%)",
-        }}
-        animate={{ scale: [1, 1.3, 1], opacity: [0.5, 0.8, 0.5] }}
-        transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-      />
     </motion.div>
   );
 }

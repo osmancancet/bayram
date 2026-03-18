@@ -35,22 +35,14 @@ export default function EntryAnimation({ onComplete }: EntryAnimationProps) {
           </motion.div>
         ))}
 
-        {/* Crescent Moon with glow */}
+        {/* Crescent Moon */}
         <motion.div
           initial={{ opacity: 0, y: -30, rotate: -30, scale: 0.5 }}
           animate={{ opacity: 1, y: 0, rotate: 0, scale: 1 }}
           transition={{ type: "spring", damping: 8, stiffness: 80, delay: 0.2 }}
         >
           <motion.div
-            animate={{
-              y: [0, -8, 0],
-              rotate: [0, 5, 0, -5, 0],
-              filter: [
-                "drop-shadow(0 0 10px rgba(245,158,11,0.3))",
-                "drop-shadow(0 0 25px rgba(245,158,11,0.6))",
-                "drop-shadow(0 0 10px rgba(245,158,11,0.3))",
-              ],
-            }}
+            animate={{ y: [0, -8, 0] }}
             transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
           >
             <Moon size={72} className="text-gold fill-gold/20" />
@@ -71,8 +63,8 @@ export default function EntryAnimation({ onComplete }: EntryAnimationProps) {
             <motion.span
               key={`r-${i}`}
               className="text-shimmer bg-gradient-to-r from-gold via-gold-light to-gold bg-clip-text text-transparent inline-block"
-              initial={{ opacity: 0, y: 20, rotateX: 90 }}
-              animate={{ opacity: 1, y: 0, rotateX: 0 }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6 + i * 0.04, type: "spring", damping: 12 }}
             >
               {char === " " ? "\u00A0" : char}
@@ -84,8 +76,8 @@ export default function EntryAnimation({ onComplete }: EntryAnimationProps) {
             <motion.span
               key={`m-${i}`}
               className="text-shimmer bg-gradient-to-r from-gold-light via-gold to-gold-light bg-clip-text text-transparent inline-block"
-              initial={{ opacity: 0, y: 20, rotateX: 90 }}
-              animate={{ opacity: 1, y: 0, rotateX: 0 }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.2 + i * 0.04, type: "spring", damping: 12 }}
             >
               {char === " " ? "\u00A0" : char}
@@ -110,7 +102,7 @@ export default function EntryAnimation({ onComplete }: EntryAnimationProps) {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 2.2, duration: 0.6 }}
       >
-        Sevdiklerine özel bayram tebriği oluştur
+        Sevdiklerine özel bayram kartı oluştur
       </motion.p>
     </motion.div>
   );

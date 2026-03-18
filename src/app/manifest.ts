@@ -2,9 +2,9 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Bayram Tebriği",
-    short_name: "Bayram",
-    description: "Ramazan Bayramı tebriği oluştur, bayram mesajları, namaz saatleri",
+    name: "Dijital Bayram",
+    short_name: "Dijital Bayram",
+    description: "Dijital Bayram — bayram kartı oluştur, bayram mesajları, namaz saatleri",
     start_url: "/",
     display: "standalone",
     background_color: "#020617",

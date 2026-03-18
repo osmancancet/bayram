@@ -1,9 +1,10 @@
 "use client";
 
-import { useState, useCallback } from "react";
+import { useState, useCallback, useMemo } from "react";
+import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
 import { Send, Link } from "lucide-react";
-import { getWhatsAppUrl, copyToClipboard } from "@/lib/share";
+import { openWhatsApp, copyToClipboard } from "@/lib/share";
 import { MESSAGES } from "@/lib/constants";
 import Toast from "./Toast";
 
@@ -14,21 +15,20 @@ interface ShareButtonsProps {
 
 export default function ShareButtons({ name, message }: ShareButtonsProps) {
   const [showToast, setShowToast] = useState(false);
+  const pathname = usePathname();
 
-  const getShareUrl = () => {
+  const url = useMemo(() => {
     if (typeof window === "undefined") return "";
-    const base = window.location.origin + window.location.pathname;
+    const base = window.location.origin + pathname;
     if (message) return `${base}?m=${encodeURIComponent(message)}`;
     return base;
-  };
-  const url = getShareUrl();
+  }, [pathname, message]);
 
   const handleShare = () => {
     const msg = message
       ? MESSAGES.custom(name, url, message)
       : MESSAGES.general(name, url);
-    const whatsappUrl = getWhatsAppUrl(msg);
-    window.open(whatsappUrl, "_blank");
+    openWhatsApp(msg);
   };
 
   const handleCopy = async () => {

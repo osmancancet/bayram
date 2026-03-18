@@ -18,7 +18,7 @@ export default function TebrikClient({ name }: TebrikClientProps) {
       <FloatingElements />
       <GreetingHero name={name} />
       <ShareButtons name={name} />
-      <CreateYourOwn senderName={name} />
+      <CreateYourOwn />
       <Footer />
     </div>
   );

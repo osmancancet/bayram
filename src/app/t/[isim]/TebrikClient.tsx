@@ -24,7 +24,7 @@ export default function TebrikClient({ name, message }: TebrikClientProps) {
       <FloatingElements />
       <GreetingHero name={name} message={message} />
       {isCreator && <ShareButtons name={name} message={message} />}
-      {!isCreator && <CreateYourOwn senderName={name} />}
+      {!isCreator && <CreateYourOwn />}
 
       <Footer />
     </div>

@@ -20,7 +20,7 @@ function seededRandom(seed: number) {
   return x - Math.floor(x);
 }
 
-const items: FloatingItem[] = Array.from({ length: 18 }, (_, i) => ({
+const items: FloatingItem[] = Array.from({ length: 8 }, (_, i) => ({
   id: i,
   emoji: emojis[i % emojis.length]!,
   x: seededRandom(i * 11 + 200) * 100,
@@ -47,12 +47,10 @@ export default function FloatingElements() {
             top: `${item.y}%`,
             fontSize: `${item.size}px`,
           }}
-          initial={{ opacity: 0, scale: 0 }}
+          initial={{ opacity: 0 }}
           animate={{
-            opacity: [0, 0.6, 0.3, 0.6, 0],
-            scale: [0, 1, 0.8, 1, 0],
+            opacity: [0, 0.5, 0.2, 0.5, 0],
             y: [0, -30, -10, -40, -60],
-            x: [0, 10, -10, 5, 0],
           }}
           transition={{
             duration: item.duration,
