@@ -1,0 +1,122 @@
+@import "tailwindcss";
+
+@theme {
+  --color-night: #020617;
+  --color-night-light: #0f172a;
+  --color-emerald-deep: #064e3b;
+  --color-gold: #f59e0b;
+  --color-gold-light: #fbbf24;
+  --color-gold-pale: #fde68a;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulse-glow {
+  0%,
+  100% {
+    text-shadow: 0 0 10px rgba(245, 158, 11, 0.3);
+  }
+  50% {
+    text-shadow: 0 0 30px rgba(245, 158, 11, 0.6),
+      0 0 60px rgba(245, 158, 11, 0.3);
+  }
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes shooting-star {
+  0% {
+    transform: translateX(-100px) translateY(-100px) rotate(45deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(calc(100vw + 100px)) translateY(calc(100vh + 100px)) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+.text-shimmer {
+  background-size: 200% auto;
+  animation: shimmer 3s linear infinite;
+}
+
+.animate-twinkle {
+  animation: twinkle var(--twinkle-duration, 3s) ease-in-out infinite;
+  animation-delay: var(--twinkle-delay, 0s);
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-shift 8s ease infinite;
+}
+
+.shooting-star {
+  position: absolute;
+  width: 80px;
+  height: 1px;
+  background: linear-gradient(to right, rgba(245, 158, 11, 0), rgba(245, 158, 11, 0.8));
+  animation: shooting-star var(--shoot-duration, 6s) linear infinite;
+  animation-delay: var(--shoot-delay, 0s);
+}
+
+body {
+  background-color: var(--color-night);
+  color: white;
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: rgba(245, 158, 11, 0.3);
+  color: white;
+}
