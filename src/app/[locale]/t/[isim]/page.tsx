@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import TebrikClient from "./TebrikClient";
+import { sanitizeName, sanitizeMessage } from "@/lib/sanitize";
 
 interface PageProps {
   params: Promise<{ isim: string; locale: string }>;
@@ -12,8 +13,8 @@ export async function generateMetadata({ params, searchParams }: PageProps): Pro
   const { m } = await searchParams;
   const t = await getTranslations({ locale, namespace: "meta" });
   const tGreeting = await getTranslations({ locale, namespace: "greeting" });
-  const name = decodeURIComponent(isim);
-  const message = m ? decodeURIComponent(m) : undefined;
+  const name = sanitizeName(decodeURIComponent(isim));
+  const message = m ? sanitizeMessage(decodeURIComponent(m)) : undefined;
 
   const description = message || t("greetingDescription", { name });
   const title = name ? `${tGreeting("line1")} ${tGreeting("line2")} — ${name}` : `${tGreeting("line1")} ${tGreeting("line2")}`;
@@ -39,8 +40,8 @@ export async function generateMetadata({ params, searchParams }: PageProps): Pro
 export default async function TebrikPage({ params, searchParams }: PageProps) {
   const { isim } = await params;
   const { m } = await searchParams;
-  const name = decodeURIComponent(isim);
-  const message = m ? decodeURIComponent(m) : undefined;
+  const name = sanitizeName(decodeURIComponent(isim));
+  const message = m ? sanitizeMessage(decodeURIComponent(m)) : undefined;
 
   return <TebrikClient name={name} message={message} />;
 }

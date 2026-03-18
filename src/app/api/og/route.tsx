@@ -1,5 +1,6 @@
 import { ImageResponse } from "next/og";
 import { NextRequest } from "next/server";
+import { sanitizeName, sanitizeMessage } from "@/lib/sanitize";
 
 export const runtime = "edge";
 
@@ -11,8 +12,10 @@ const titles: Record<string, [string, string]> = {
 
 export async function GET(request: NextRequest) {
   const { searchParams } = new URL(request.url);
-  const isim = searchParams.get("isim") || "";
-  const msg = searchParams.get("msg") || "";
+  const rawIsim = searchParams.get("isim") || "";
+  const rawMsg = searchParams.get("msg") || "";
+  const isim = rawIsim ? sanitizeName(rawIsim) : "";
+  const msg = rawMsg ? sanitizeMessage(rawMsg) : "";
   const locale = searchParams.get("locale") || "tr";
   const il = searchParams.get("il") || "";
   const saat = searchParams.get("saat") || "";
