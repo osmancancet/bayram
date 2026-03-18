@@ -46,6 +46,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  other: {
+    "google-adsense-account": "ca-pub-2281167144291834",
+  },
 };
 
 export default function RootLayout({
@@ -62,11 +65,12 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        <meta name="google-adsense-account" content="ca-pub-2281167144291834" />
         <Script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2281167144291834"
           crossOrigin="anonymous"
-          strategy="afterInteractive"
+          strategy="beforeInteractive"
         />
       </head>
       <body className={`${inter.className} antialiased min-h-screen`}>
