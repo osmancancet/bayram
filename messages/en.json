@@ -123,7 +123,20 @@
     "faq6A": "According to the Hanafi school, since Eid prayer is wajib, missing it without a valid excuse is sinful. However, it cannot be made up (qada)."
   },
   "footer": {
-    "text": "Eid Mubarak"
+    "text": "Eid Mubarak",
+    "pages": "Pages",
+    "home": "Home",
+    "messages": "Eid Messages",
+    "prayerTimes": "Prayer Times",
+    "prayerGuide": "Prayer Guide",
+    "popularCities": "Popular Cities"
+  },
+  "relatedLinks": {
+    "title": "Explore",
+    "home": "Create Eid Card",
+    "messages": "Eid Messages",
+    "prayerTimes": "Prayer Times",
+    "prayerGuide": "Prayer Guide"
   },
   "whatsapp": {
     "shareMessage": "May this blessed Eid bring peace, happiness and prosperity to you and your family. Eid Mubarak!\n-{name}\n\nClick to see the Eid greeting card I created for you.\n{url}\n\nEid Mubarak! 🤲",

@@ -3,6 +3,8 @@ import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import CitySelector from "@/components/CitySelector";
 import AdSlot from "@/components/AdSlot";
+import RelatedLinks from "@/components/RelatedLinks";
+import { eventJsonLd } from "@/lib/json-ld";
 
 const popularCities = [
   { slug: "istanbul", label: "İstanbul" },
@@ -26,11 +28,21 @@ export async function generateMetadata({
   };
 }
 
-export default async function NamazSaatleriPage() {
+export default async function NamazSaatleriPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
   const t = await getTranslations("prayerTimes");
+  const jsonLd = eventJsonLd(locale);
 
   return (
     <div className="min-h-screen py-8 px-4">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="max-w-2xl mx-auto">
         {/* Hero header */}
         <div className="text-center mb-8">
@@ -69,6 +81,8 @@ export default async function NamazSaatleriPage() {
 
         {/* City selector */}
         <CitySelector />
+
+        <RelatedLinks exclude="prayerTimes" />
       </div>
     </div>
   );

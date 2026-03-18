@@ -85,6 +85,7 @@ export default async function RootLayout({ children, params }: Props) {
   return (
     <html lang={locale} dir={isRtl ? "rtl" : "ltr"}>
       <head>
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

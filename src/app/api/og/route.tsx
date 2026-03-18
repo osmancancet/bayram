@@ -3,10 +3,22 @@ import { NextRequest } from "next/server";
 
 export const runtime = "edge";
 
+const titles: Record<string, [string, string]> = {
+  tr: ["Ramazan Bayramınız", "Mübarek Olsun"],
+  en: ["Eid Mubarak", "Happy Eid al-Fitr"],
+  ar: ["عيد مبارك", "عيد الفطر سعيد"],
+};
+
 export async function GET(request: NextRequest) {
   const { searchParams } = new URL(request.url);
   const isim = searchParams.get("isim") || "";
   const msg = searchParams.get("msg") || "";
+  const locale = searchParams.get("locale") || "tr";
+  const il = searchParams.get("il") || "";
+  const saat = searchParams.get("saat") || "";
+
+  const [line1, line2] = titles[locale] || titles.tr;
+  const isRtl = locale === "ar";
 
   return new ImageResponse(
     (
@@ -24,6 +36,7 @@ export async function GET(request: NextRequest) {
           padding: "40px",
           position: "relative",
           overflow: "hidden",
+          direction: isRtl ? "rtl" : "ltr",
         }}
       >
         {/* Background pattern */}
@@ -55,29 +68,75 @@ export async function GET(request: NextRequest) {
         {/* Moon emoji */}
         <div style={{ fontSize: "64px", marginBottom: "16px" }}>🌙</div>
 
-        {/* Main title */}
-        <div
-          style={{
-            color: "#fbbf24",
-            fontSize: "58px",
-            fontWeight: 800,
-            marginBottom: "4px",
-            textAlign: "center",
-          }}
-        >
-          Ramazan Bayramınız
-        </div>
-        <div
-          style={{
-            color: "#f59e0b",
-            fontSize: "58px",
-            fontWeight: 800,
-            marginBottom: "16px",
-            textAlign: "center",
-          }}
-        >
-          Mübarek Olsun
-        </div>
+        {/* City-specific header */}
+        {il && saat ? (
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              gap: "8px",
+            }}
+          >
+            <div
+              style={{
+                color: "#fbbf24",
+                fontSize: "52px",
+                fontWeight: 800,
+                textAlign: "center",
+              }}
+            >
+              {il}
+            </div>
+            <div
+              style={{
+                color: "#f59e0b",
+                fontSize: "36px",
+                fontWeight: 600,
+                textAlign: "center",
+              }}
+            >
+              Bayram Namazı Saati
+            </div>
+            <div
+              style={{
+                color: "#ffffff",
+                fontSize: "72px",
+                fontWeight: 800,
+                textAlign: "center",
+                marginTop: "8px",
+              }}
+            >
+              {saat}
+            </div>
+          </div>
+        ) : (
+          <>
+            {/* Main title */}
+            <div
+              style={{
+                color: "#fbbf24",
+                fontSize: "58px",
+                fontWeight: 800,
+                marginBottom: "4px",
+                textAlign: "center",
+              }}
+            >
+              {line1}
+            </div>
+            <div
+              style={{
+                color: "#f59e0b",
+                fontSize: "58px",
+                fontWeight: 800,
+                marginBottom: "16px",
+                textAlign: "center",
+              }}
+            >
+              {line2}
+            </div>
+          </>
+        )}
 
         {/* Custom message */}
         {msg && (
@@ -133,6 +192,18 @@ export async function GET(request: NextRequest) {
             </div>
           </div>
         )}
+
+        {/* Bottom branding */}
+        <div
+          style={{
+            position: "absolute",
+            bottom: "24px",
+            color: "rgba(255,255,255,0.2)",
+            fontSize: "16px",
+          }}
+        >
+          dijitalbayram.com
+        </div>
 
         {/* Bottom glow */}
         <div

@@ -123,7 +123,20 @@
     "faq6A": "Hanefi mezhebine göre bayram namazı vacip olduğundan, özürsüz terk eden kişi günah işlemiş olur. Ancak kaza edilmez."
   },
   "footer": {
-    "text": "Hayırlı Bayramlar"
+    "text": "Hayırlı Bayramlar",
+    "pages": "Sayfalar",
+    "home": "Ana Sayfa",
+    "messages": "Bayram Mesajları",
+    "prayerTimes": "Namaz Saatleri",
+    "prayerGuide": "Bayram Namazı Rehberi",
+    "popularCities": "Popüler Şehirler"
+  },
+  "relatedLinks": {
+    "title": "Keşfet",
+    "home": "Bayram Kartı Oluştur",
+    "messages": "Bayram Mesajları",
+    "prayerTimes": "Namaz Saatleri",
+    "prayerGuide": "Bayram Namazı Rehberi"
   },
   "whatsapp": {
     "shareMessage": "Bu mübarek günlerde tüm dualarınız kabul olsun, sofranız bereketli, yüzünüz güleç olsun. Ramazan Bayramınız Mübarek Olsun!\n-{name}\n\nSizin için oluşturduğum bayram kartını görmek için tıklayınız.\n{url}\n\nHayırlı bayramlar! 🤲",
