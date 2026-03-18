@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useCallback } from "react";
+import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { Copy, Send, Check } from "lucide-react";
 import { openWhatsApp, copyToClipboard } from "@/lib/share";
@@ -12,6 +13,7 @@ interface MessageCardProps {
 }
 
 export default function MessageCard({ mesaj, index }: MessageCardProps) {
+  const t = useTranslations("messages");
   const [copied, setCopied] = useState(false);
 
   const handleCopy = useCallback(async () => {
@@ -41,7 +43,7 @@ export default function MessageCard({ mesaj, index }: MessageCardProps) {
           className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium bg-white/5 hover:bg-white/10 text-white/60 hover:text-white/90 border border-white/10 transition-all duration-200 active:scale-95"
         >
           {copied ? <Check size={14} className="text-green-400" /> : <Copy size={14} />}
-          {copied ? "Kopyalandı" : "Kopyala"}
+          {copied ? t("copied") : t("copy")}
         </button>
 
         <button
@@ -49,7 +51,7 @@ export default function MessageCard({ mesaj, index }: MessageCardProps) {
           className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium bg-[#25D366]/10 hover:bg-[#25D366]/20 text-[#25D366] border border-[#25D366]/20 transition-all duration-200 active:scale-95"
         >
           <Send size={14} />
-          Gönder
+          {t("send")}
         </button>
       </div>
     </motion.div>

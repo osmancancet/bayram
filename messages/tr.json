@@ -1,0 +1,184 @@
+{
+  "meta": {
+    "siteTitle": "Dijital Bayram | Ramazan Bayramı 2026",
+    "siteDescription": "Dijital Bayram — sevdiklerine özel bayram kartı oluştur, WhatsApp'tan gönder. Bayram mesajları ve namaz saatleri.",
+    "ogDescription": "Dijital Bayram — sevdiklerine özel bayram kartı oluştur, WhatsApp'tan gönder.",
+    "keywords": "ramazan bayramı, dijital bayram, bayram mesajları, bayram namazı saati, hayırlı bayramlar, ramazan bayramı 2026",
+    "greetingDescription": "{name} sana bayram kartı gönderiyor",
+    "messagesTitle": "Ramazan Bayramı Mesajları 2026 | En Güzel Bayram Mesajları",
+    "messagesDescription": "En güzel ramazan bayramı mesajları. Aile, resmi, eğlenceli ve dua mesajları. Kopyala veya WhatsApp'tan gönder.",
+    "prayerTimesTitle": "Bayram Namazı Saatleri 2026 — Tüm İller | Ramazan Bayramı",
+    "prayerTimesDescription": "2026 Ramazan Bayramı namazı saatleri. 81 il ve tüm ilçeler için bayram namazı saat kaçta? İl seç, bayram namazı vaktini öğren.",
+    "prayerGuideTitle": "Bayram Namazı Nasıl Kılınır? | Adım Adım Rehber",
+    "prayerGuideDescription": "Bayram namazı nasıl kılınır? Kaç rekât, hangi tekbirler alınır, duaları nelerdir? Adım adım bayram namazı kılınışı rehberi."
+  },
+  "nav": {
+    "greeting": "Tebrik",
+    "messages": "Mesajlar",
+    "prayerTimes": "Namaz Saatleri",
+    "siteName": "Dijital Bayram"
+  },
+  "home": {
+    "line1": "Ramazan Bayramınız",
+    "line2": "Mübarek Olsun",
+    "subtitle": "Sevdiklerine özel bayram kartı oluştur",
+    "nameLabel": "İsmini yaz, tebrik kartın hazırlansın",
+    "namePlaceholder": "Örn: Ahmet",
+    "addMessage": "Özel mesaj ekle",
+    "messagePlaceholder": "Mesajını yaz...",
+    "createButton": "Tebrik oluştur"
+  },
+  "greeting": {
+    "defaultMessage": "Bu mübarek günlerde tüm dualarınız kabul olsun, sofranız bereketli, yüzünüz güleç olsun.",
+    "line1": "Ramazan Bayramınız",
+    "line2": "Mübarek Olsun"
+  },
+  "share": {
+    "whatsapp": "WhatsApp ile paylaş",
+    "copyLink": "Linki kopyala",
+    "linkCopied": "Link kopyalandı!"
+  },
+  "cta": {
+    "separator": "sen de dene",
+    "title": "🌙 Sen de tebrik kartı oluştur",
+    "subtitle": "Sevdiklerine özel bayram kartı gönder",
+    "bayramCard": "bayram kartı",
+    "createCard": "🌙 Sen de tebrik kartı oluştur"
+  },
+  "messages": {
+    "pageTitle": "Bayram Mesajları",
+    "pageSubtitle": "Kopyala veya WhatsApp'tan gönder",
+    "copy": "Kopyala",
+    "copied": "Kopyalandı",
+    "send": "Gönder",
+    "categories": {
+      "genel": "Genel",
+      "aile": "Aile",
+      "resmi": "Resmi / İş",
+      "komik": "Eğlenceli",
+      "dua": "Dua"
+    }
+  },
+  "prayerTimes": {
+    "date": "20 Mart 2026",
+    "pageTitle": "Bayram Namazı Saatleri",
+    "pageSubtitle": "81 il ve tüm ilçeler için bayram namazı vakitleri",
+    "searchPlaceholder": "İl ara...",
+    "noResults": "Sonuç bulunamadı",
+    "prayerGuideLink": "🕌 Bayram namazı nasıl kılınır?",
+    "prayerGuideSub": "Adım adım bayram namazı kılınışı rehberi",
+    "seeTimesButton": "🕌 Bayram Namazı Saatlerini Gör",
+    "whatTime": "Bayram Namazı Saat Kaçta?",
+    "whatTimeDesc": "Bayram namazı vakti güneş doğduktan yaklaşık 45-50 dakika sonradır ve şehirlere göre değişir. Şehrinizi seçerek bayram namazı saatini öğrenin:",
+    "districts": "İlçeler",
+    "otherDistricts": "Diğer ilçeler için",
+    "clickHere": "tıklayınız",
+    "home": "Ana Sayfa",
+    "prayerTimesLabel": "Namaz Saatleri",
+    "bayramPrayerTime": "Bayram Namazı Saati",
+    "allDistricts": "Tüm İlçeler"
+  },
+  "prayerGuide": {
+    "badge": "Rehber",
+    "title": "Bayram Namazı Nasıl Kılınır?",
+    "subtitle": "Adım adım bayram namazı kılınışı, tekbirler ve dualar",
+    "whatIs": "Bayram Namazı Nedir?",
+    "whatIsDesc": "Bayram namazı, Ramazan Bayramı ve Kurban Bayramı'nın birinci günü sabah kılınan 2 rekâtlık bir namazdır. Hanefi mezhebine göre vacip, diğer mezheplere göre sünnet-i müekkededir. Bayram namazı camilerde cemaatle kılınır ve hutbe okunur.",
+    "howMany": "Bayram Namazı Kaç Rekât?",
+    "howManyDesc": "Bayram namazı <strong>2 rekâttır</strong>. Normal namazlardan farkı, her rekâtta fazladan tekbir (zâit tekbir) alınmasıdır. Birinci rekâtta 3, ikinci rekâtta 3 olmak üzere toplam 6 fazla tekbir getirilir.",
+    "stepByStep": "Bayram Namazı Kılınışı (Adım Adım)",
+    "step1Title": "Niyet ve İftitah Tekbiri",
+    "step1Desc": "İmam ile birlikte \"Niyet ettim Allah rızası için bayram namazı kılmaya\" diye niyet edilir. Eller kaldırılarak \"Allahu Ekber\" denilerek iftitah tekbiri alınır ve namaza başlanır.",
+    "step2Title": "Sübhaneke Okunur",
+    "step2Desc": "İftitah tekbirinden sonra Sübhaneke duası okunur.",
+    "step3Title": "Birinci Rekât — 3 Fazla Tekbir",
+    "step3Desc": "Sübhaneke'den sonra imam 3 defa \"Allahu Ekber\" der. Her tekbirde eller kulaklara kaldırılır ve yanlara bırakılır. Üçüncü tekbirden sonra eller bağlanır.",
+    "step4Title": "Fatiha ve Sure Okunur",
+    "step4Desc": "İmam Fatiha suresini ve ardından bir sure okur. Sonra normal namaz gibi rükûya gidilir, secdelere varılır. Birinci rekât tamamlanır.",
+    "step5Title": "İkinci Rekât — Kıyam",
+    "step5Desc": "İkinci rekâta kalkılır. İmam önce Fatiha ve bir sure okur.",
+    "step6Title": "İkinci Rekât — 3 Fazla Tekbir",
+    "step6Desc": "Sure okunduktan sonra imam 3 defa \"Allahu Ekber\" der. Her tekbirde eller kaldırılır ve bırakılır. Üçüncü tekbirden sonra doğrudan rükûya gidilir (eller bağlanmaz).",
+    "step7Title": "Namaz Tamamlanır",
+    "step7Desc": "Rükû ve secdelerden sonra oturulur, Ettehiyyatu, Allahümme Salli, Allahümme Barik ve Rabbena duaları okunur. Selam verilerek namaz bitirilir.",
+    "step8Title": "Hutbe Dinlenir",
+    "step8Desc": "Bayram namazında hutbe namazdan sonra okunur (cuma namazının aksine). Hutbe dinlenmesi sünnettir.",
+    "duaTitle": "Bayram Namazı Duası",
+    "tekbirLabel": "Tekbir",
+    "tekbirText": "Allahu Ekber, Allahu Ekber. Lâ ilâhe illallahu vallahu Ekber. Allahu Ekber ve lillâhi'l-hamd.",
+    "afterPrayerLabel": "Bayram Namazı Sonrası Dua",
+    "afterPrayerText": "Allah'ım! Bu mübarek bayram gününde dualarımızı kabul eyle. Ümmet-i Muhammed'e birlik, beraberlik ve huzur nasip eyle. Bayramımızı mübarek kıl. Amin.",
+    "faqTitle": "Sık Sorulan Sorular",
+    "faq1Q": "Bayram namazı kaç rekât?",
+    "faq1A": "Bayram namazı 2 rekâttır. Her iki rekâtta da fazladan tekbirler alınır. Birinci rekâtta 3, ikinci rekâtta 3 fazla tekbir getirilir.",
+    "faq2Q": "Bayram namazı farz mı?",
+    "faq2A": "Hanefi mezhebine göre bayram namazı vaciptir. Şafii mezhebine göre ise sünnet-i müekkededir. Her iki görüşe göre de kılınması büyük sevaptır.",
+    "faq3Q": "Bayram namazı saat kaçta kılınır?",
+    "faq3A": "Bayram namazı güneş doğduktan yaklaşık 45-50 dakika sonra kılınır. Kesin vakit illere göre değişir. Şehrinizin bayram namazı saatini sitemizden öğrenebilirsiniz.",
+    "faq4Q": "Bayram namazı kaç kişiyle kılınır?",
+    "faq4A": "Hanefi mezhebine göre bayram namazı cemaatla kılınır ve en az 4 kişi (imam dahil) gerekir. Tek başına kılınmaz. Diğer mezheplere göre tek başına da kılınabilir.",
+    "faq5Q": "Kadınlar bayram namazı kılabilir mi?",
+    "faq5A": "Evet, kadınlar bayram namazı kılabilir. Camilerde kadınlara ayrılan bölümlerde bayram namazına katılabilirler.",
+    "faq6Q": "Bayram namazı kılmayanın günahı var mı?",
+    "faq6A": "Hanefi mezhebine göre bayram namazı vacip olduğundan, özürsüz terk eden kişi günah işlemiş olur. Ancak kaza edilmez."
+  },
+  "footer": {
+    "text": "Hayırlı Bayramlar"
+  },
+  "whatsapp": {
+    "shareMessage": "Bu mübarek günlerde tüm dualarınız kabul olsun, sofranız bereketli, yüzünüz güleç olsun. Ramazan Bayramınız Mübarek Olsun!\n-{name}\n\nSizin için oluşturduğum bayram kartını görmek için tıklayınız.\n{url}\n\nHayırlı bayramlar! 🤲",
+    "customMessage": "{message}\n-{name}\n\nSizin için oluşturduğum bayram kartını görmek için tıklayınız.\n{url}\n\nHayırlı bayramlar! 🤲"
+  },
+  "defaultMessages": [
+    "Bu mübarek günlerde tüm dualarınız kabul olsun, sofranız bereketli, yüzünüz güleç olsun.",
+    "Ramazan Bayramı'nın bereket ve huzuru üzerinize olsun.",
+    "Sevdiklerinizle birlikte nice güzel bayramlar geçirmeniz dileğiyle.",
+    "Bayramın neşesi, mutluluğu ve bereketi daim olsun.",
+    "Gönüllerin birbirine en yakın olduğu bu güzel günde bayramınız kutlu olsun.",
+    "Bu bayramda yürekler bir olsun, sofralar şenlensin, dualar kabul olsun.",
+    "Bayram sofranız bereketli, gülüşleriniz bol, sevdikleriniz yanınızda olsun.",
+    "Allah bu bayramda kalbinizi huzurla, evinizi bereketle doldursun."
+  ],
+  "bayramMessages": {
+    "genel": [
+      "Ramazan Bayramınız mübarek olsun. Sevdiklerinizle birlikte nice güzel bayramlar geçirmeniz dileğiyle.",
+      "Bu mübarek günlerde tüm dualarınız kabul olsun, sofranız bereketli, yüzünüz güleç olsun. Hayırlı bayramlar!",
+      "Bayramın neşesi, mutluluğu ve bereketi daim olsun. Nice güzel bayramlara.",
+      "Ramazan Bayramı'nın huzur, bereket ve mutluluk getirmesi dileğiyle. Bayramınız kutlu olsun!",
+      "Gönüllerin birbirine en yakın olduğu bu güzel günde bayramınızı en içten dileklerimle kutlarım.",
+      "Bayram sofranız bereketli, gülüşleriniz bol, sevdikleriniz yanınızda olsun. Mutlu bayramlar!",
+      "Bu güzel bayramda yürekler bir olsun, sofralar şenlensin, dualar kabul olsun. Hayırlı bayramlar!",
+      "Ramazan Bayramı'nın tüm İslam alemine hayırlar getirmesini diliyorum. Bayramınız mübarek olsun."
+    ],
+    "aile": [
+      "Canım ailem, bu bayramda da bir arada olmanın mutluluğunu yaşıyoruz. Hepinizi çok seviyorum. İyi bayramlar!",
+      "Anneciğim / Babacığım, ellerinizden öper, bayramınızı kutlarım. Sağlıklı, huzurlu nice bayramlara.",
+      "Sevgili ailem, uzakta da olsam gönlüm sizinle. Bu bayramda tüm güzelliklerin sizlerle olmasını diliyorum.",
+      "Dedelerimizin, ninelerimizin ellerinden öpüyorum. Dualarınız bizimle, sevginiz kalbimizde. Hayırlı bayramlar!",
+      "Kardeşim, seninle büyümenin, aynı sofrada oturmanın kıymetini biliyorum. İyi ki varsın, iyi bayramlar!",
+      "Ailemizin neşesi, birliği ve sevgisi daim olsun. Bu bayram da gönlümüz bir, soframız bereketli olsun."
+    ],
+    "resmi": [
+      "Değerli meslektaşlarım, Ramazan Bayramınızı en içten dileklerimle kutlar, sağlık ve mutluluk dilerim.",
+      "Bayramın iş hayatımıza da huzur ve bereket getirmesini temenni ederim. Hayırlı bayramlar.",
+      "Sizinle çalışmaktan büyük mutluluk duyuyorum. Ramazan Bayramınız mübarek, ailenizle birlikte nice güzel günleriniz olsun.",
+      "Saygıdeğer hocam, Ramazan Bayramınızı kutlar, sağlıklı ve huzurlu nice bayramlar geçirmenizi dilerim.",
+      "Değerli müşterilerimizin ve iş ortaklarımızın Ramazan Bayramı'nı kutlar, hayırlı günler dileriz."
+    ],
+    "komik": [
+      "Bayram harçlığımı bekliyorum, haberin olsun! 😄 Şaka bir yana, bayramın kutlu olsun!",
+      "Bayramda kilo aldıysan üzülme, herkes aldı. Önemli olan sofradan mutlu kalkmak! Hayırlı bayramlar 🍬",
+      "El öpmek için sıraya giriyorum, harçlık hesabı yapmıyorum ama yapmıyorum demiyorum. İyi bayramlar! 💰",
+      "Bayram ziyaretinde en çok çayı mı yoksa baklavayı mı seviyorsun? Ben ikisini birden seviyorum. Bayramın kutlu olsun! 🍵",
+      "Ramazan bitti ama ben hâlâ iftar saatini bekliyorum alışkanlıktan. Güzel bir bayram geçir! 😅",
+      "Bu bayram mesajını atan ilk kişi ben olayım dedim. Geç kaldıysam da niyetim güzeldi! İyi bayramlar! 🏃"
+    ],
+    "dua": [
+      "Allah bu bayramda kalbini huzurla, evini bereketle, ömrünü sağlıkla doldursun. Amin. Hayırlı bayramlar.",
+      "Rabbim bu mübarek bayramda dualarını kabul etsin, günahlarını affetsin, seni sevdiklerinle beraber eylesin.",
+      "Bu bayramda dökülen her dua bir rahmet olsun, tutulan her oruç kabul olsun. Allah bayramınızı mübarek kılsın.",
+      "Ya Rabbi, bu bayramın ümmete birlik, beraberlik ve huzur getirmesini nasip eyle. Bayramınız mübarek olsun.",
+      "Allah'ım, sevdiklerimizi bizden ayırma, sofralarımızı boş bırakma, dualarımızı geri çevirme. Hayırlı bayramlar."
+    ]
+  }
+}

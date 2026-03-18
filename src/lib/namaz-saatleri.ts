@@ -41,7 +41,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Adana",
     slug: "adana",
-    saat: "06:28",
+    saat: "07:12",
     ilceler: ilceler(
       "Aladağ", "Ceyhan", "Çukurova", "Feke", "İmamoğlu",
       "Karaisalı", "Karataş", "Kozan", "Pozantı", "Saimbeyli",
@@ -51,7 +51,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Adıyaman",
     slug: "adiyaman",
-    saat: "06:17",
+    saat: "07:01",
     ilceler: ilceler(
       "Besni", "Çelikhan", "Gerger", "Gölbaşı", "Kahta",
       "Merkez", "Samsat", "Sincik", "Tut"
@@ -60,7 +60,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Afyonkarahisar",
     slug: "afyonkarahisar",
-    saat: "06:36",
+    saat: "07:32",
     ilceler: ilceler(
       "Başmakçı", "Bayat", "Bolvadin", "Çay", "Çobanlar",
       "Dazkırı", "Dinar", "Emirdağ", "Evciler", "Hocalar",
@@ -71,7 +71,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Ağrı",
     slug: "agri",
-    saat: "06:02",
+    saat: "06:42",
     ilceler: ilceler(
       "Diyadin", "Doğubayazıt", "Eleşkirt", "Hamur",
       "Merkez", "Patnos", "Taşlıçay", "Tutak"
@@ -80,7 +80,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Aksaray",
     slug: "aksaray",
-    saat: "06:27",
+    saat: "07:18",
     ilceler: ilceler(
       "Ağaçören", "Eskil", "Gülağaç", "Güzelyurt",
       "Merkez", "Ortaköy", "Sarıyahşi", "Sultanhanı"
@@ -89,7 +89,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Amasya",
     slug: "amasya",
-    saat: "06:18",
+    saat: "07:12",
     ilceler: ilceler(
       "Göynücek", "Gümüşhacıköy", "Hamamözü", "Merkez",
       "Merzifon", "Suluova", "Taşova"
@@ -98,7 +98,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Ankara",
     slug: "ankara",
-    saat: "06:30",
+    saat: "07:23",
     ilceler: ilceler(
       "Akyurt", "Altındağ", "Ayaş", "Bala", "Beypazarı",
       "Çamlıdere", "Çankaya", "Çubuk", "Elmadağ", "Etimesgut",
@@ -110,7 +110,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Antalya",
     slug: "antalya",
-    saat: "06:36",
+    saat: "07:31",
     ilceler: ilceler(
       "Akseki", "Aksu", "Alanya", "Demre", "Döşemealtı",
       "Elmalı", "Finike", "Gazipaşa", "Gündoğmuş", "İbradı",
@@ -121,7 +121,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Ardahan",
     slug: "ardahan",
-    saat: "05:56",
+    saat: "06:44",
     ilceler: ilceler(
       "Çıldır", "Damal", "Göle", "Hanak", "Merkez", "Posof"
     ),
@@ -129,7 +129,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Artvin",
     slug: "artvin",
-    saat: "05:58",
+    saat: "06:48",
     ilceler: ilceler(
       "Ardanuç", "Arhavi", "Borçka", "Hopa", "Kemalpaşa",
       "Merkez", "Murgul", "Şavşat", "Yusufeli"
@@ -138,7 +138,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Aydın",
     slug: "aydin",
-    saat: "06:44",
+    saat: "07:42",
     ilceler: ilceler(
       "Bozdoğan", "Buharkent", "Çine", "Didim", "Efeler",
       "Germencik", "İncirliova", "Karacasu", "Karpuzlu", "Koçarlı",
@@ -149,7 +149,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Balıkesir",
     slug: "balikesir",
-    saat: "06:42",
+    saat: "07:43",
     ilceler: ilceler(
       "Altıeylül", "Ayvalık", "Balya", "Bandırma", "Bigadiç",
       "Burhaniye", "Dursunbey", "Edremit", "Erdek", "Gömeç",
@@ -160,7 +160,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Bartın",
     slug: "bartin",
-    saat: "06:27",
+    saat: "07:26",
     ilceler: ilceler(
       "Amasra", "Kurucaşile", "Merkez", "Ulus"
     ),
@@ -168,7 +168,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Batman",
     slug: "batman",
-    saat: "06:08",
+    saat: "06:49",
     ilceler: ilceler(
       "Beşiri", "Gercüş", "Hasankeyf", "Kozluk", "Merkez", "Sason"
     ),
@@ -176,7 +176,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Bayburt",
     slug: "bayburt",
-    saat: "06:05",
+    saat: "06:54",
     ilceler: ilceler(
       "Aydıntepe", "Demirözü", "Merkez"
     ),
@@ -184,7 +184,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Bilecik",
     slug: "bilecik",
-    saat: "06:36",
+    saat: "07:35",
     ilceler: ilceler(
       "Bozüyük", "Gölpazarı", "İnhisar", "Merkez",
       "Osmaneli", "Pazaryeri", "Söğüt", "Yenipazar"
@@ -193,7 +193,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Bingöl",
     slug: "bingol",
-    saat: "06:07",
+    saat: "06:52",
     ilceler: ilceler(
       "Adaklı", "Genç", "Karlıova", "Kiğı", "Merkez",
       "Solhan", "Yayladere", "Yedisu"
@@ -202,7 +202,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Bitlis",
     slug: "bitlis",
-    saat: "06:03",
+    saat: "06:46",
     ilceler: ilceler(
       "Adilcevaz", "Ahlat", "Güroymak", "Hizan",
       "Merkez", "Mutki", "Tatvan"
@@ -211,7 +211,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Bolu",
     slug: "bolu",
-    saat: "06:30",
+    saat: "07:29",
     ilceler: ilceler(
       "Dörtdivan", "Gerede", "Göynük", "Kıbrıscık",
       "Mengen", "Merkez", "Mudurnu", "Seben", "Yeniçağa"
@@ -220,7 +220,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Burdur",
     slug: "burdur",
-    saat: "06:37",
+    saat: "07:33",
     ilceler: ilceler(
       "Ağlasun", "Altınyayla", "Bucak", "Çavdır",
       "Çeltikçi", "Gölhisar", "Karamanlı", "Kemer",
@@ -230,7 +230,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Bursa",
     slug: "bursa",
-    saat: "06:39",
+    saat: "07:38",
     ilceler: ilceler(
       "Büyükorhan", "Gemlik", "Gürsu", "Harmancık", "İnegöl",
       "İznik", "Karacabey", "Keles", "Kestel", "Mudanya",
@@ -241,7 +241,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Çanakkale",
     slug: "canakkale",
-    saat: "06:48",
+    saat: "07:49",
     ilceler: ilceler(
       "Ayvacık", "Bayramiç", "Biga", "Bozcaada", "Çan",
       "Eceabat", "Ezine", "Gelibolu", "Gökçeada", "Lapseki",
@@ -251,7 +251,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Çankırı",
     slug: "cankiri",
-    saat: "06:25",
+    saat: "07:20",
     ilceler: ilceler(
       "Atkaracalar", "Bayramören", "Çerkeş", "Eldivan",
       "Ilgaz", "Kızılırmak", "Korgun", "Kurşunlu",
@@ -261,7 +261,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Çorum",
     slug: "corum",
-    saat: "06:21",
+    saat: "07:15",
     ilceler: ilceler(
       "Alaca", "Bayat", "Boğazkale", "Dodurga", "İskilip",
       "Kargı", "Laçin", "Mecitözü", "Merkez", "Oğuzlar",
@@ -271,7 +271,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Denizli",
     slug: "denizli",
-    saat: "06:40",
+    saat: "07:37",
     ilceler: ilceler(
       "Acıpayam", "Babadağ", "Baklan", "Bekilli", "Beyağaç",
       "Bozkurt", "Buldan", "Çal", "Çameli", "Çardak",
@@ -282,7 +282,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Diyarbakır",
     slug: "diyarbakir",
-    saat: "06:11",
+    saat: "06:53",
     ilceler: ilceler(
       "Bağlar", "Bismil", "Çermik", "Çınar", "Çüngüş",
       "Dicle", "Eğil", "Ergani", "Hani", "Hazro",
@@ -293,7 +293,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Düzce",
     slug: "duzce",
-    saat: "06:31",
+    saat: "07:30",
     ilceler: ilceler(
       "Akçakoca", "Cumayeri", "Çilimli", "Gölyaka",
       "Gümüşova", "Kaynaşlı", "Merkez", "Yığılca"
@@ -302,7 +302,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Edirne",
     slug: "edirne",
-    saat: "06:48",
+    saat: "07:49",
     ilceler: ilceler(
       "Enez", "Havsa", "İpsala", "Keşan", "Lalapaşa",
       "Meriç", "Merkez", "Süloğlu", "Uzunköprü"
@@ -311,7 +311,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Elazığ",
     slug: "elazig",
-    saat: "06:13",
+    saat: "06:57",
     ilceler: ilceler(
       "Ağın", "Alacakaya", "Arıcak", "Baskil", "Karakoçan",
       "Keban", "Kovancılar", "Maden", "Merkez", "Palu", "Sivrice"
@@ -320,7 +320,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Erzincan",
     slug: "erzincan",
-    saat: "06:09",
+    saat: "06:56",
     ilceler: ilceler(
       "Çayırlı", "İliç", "Kemah", "Kemaliye", "Merkez",
       "Otlukbeli", "Refahiye", "Tercan", "Üzümlü"
@@ -329,7 +329,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Erzurum",
     slug: "erzurum",
-    saat: "06:02",
+    saat: "06:49",
     ilceler: ilceler(
       "Aşkale", "Aziziye", "Çat", "Hınıs", "Horasan",
       "İspir", "Karaçoban", "Karayazı", "Köprüköy", "Narman",
@@ -340,7 +340,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Eskişehir",
     slug: "eskisehir",
-    saat: "06:36",
+    saat: "07:32",
     ilceler: ilceler(
       "Alpu", "Beylikova", "Çifteler", "Günyüzü", "Han",
       "İnönü", "Mahmudiye", "Mihalgazi", "Mihalıççık",
@@ -350,7 +350,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Gaziantep",
     slug: "gaziantep",
-    saat: "06:21",
+    saat: "07:04",
     ilceler: ilceler(
       "Araban", "İslahiye", "Karkamış", "Nizip", "Nurdağı",
       "Oğuzeli", "Şahinbey", "Şehitkamil", "Yavuzeli"
@@ -359,7 +359,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Giresun",
     slug: "giresun",
-    saat: "06:11",
+    saat: "07:01",
     ilceler: ilceler(
       "Alucra", "Bulancak", "Çamoluk", "Çanakçı", "Dereli",
       "Doğankent", "Espiye", "Eynesil", "Görele", "Güce",
@@ -370,7 +370,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Gümüşhane",
     slug: "gumushane",
-    saat: "06:07",
+    saat: "06:57",
     ilceler: ilceler(
       "Kelkit", "Köse", "Kürtün", "Merkez", "Şiran", "Torul"
     ),
@@ -378,7 +378,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Hakkari",
     slug: "hakkari",
-    saat: "05:58",
+    saat: "06:39",
     ilceler: ilceler(
       "Çukurca", "Derecik", "Merkez", "Şemdinli", "Yüksekova"
     ),
@@ -386,7 +386,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Hatay",
     slug: "hatay",
-    saat: "06:26",
+    saat: "07:09",
     ilceler: ilceler(
       "Altınözü", "Antakya", "Arsuz", "Belen", "Defne",
       "Dörtyol", "Erzin", "Hassa", "İskenderun", "Kırıkhan",
@@ -396,7 +396,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Iğdır",
     slug: "igdir",
-    saat: "05:56",
+    saat: "06:38",
     ilceler: ilceler(
       "Aralık", "Karakoyunlu", "Merkez", "Tuzluca"
     ),
@@ -404,7 +404,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Isparta",
     slug: "isparta",
-    saat: "06:36",
+    saat: "07:31",
     ilceler: ilceler(
       "Aksu", "Atabey", "Eğirdir", "Gelendost", "Gönen",
       "Keçiborlu", "Merkez", "Senirkent", "Sütçüler",
@@ -414,7 +414,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "İstanbul",
     slug: "istanbul",
-    saat: "06:40",
+    saat: "07:39",
     ilceler: ilceler(
       "Adalar", "Arnavutköy", "Ataşehir", "Avcılar", "Bağcılar",
       "Bahçelievler", "Bakırköy", "Başakşehir", "Bayrampaşa", "Beşiktaş",
@@ -429,7 +429,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "İzmir",
     slug: "izmir",
-    saat: "06:46",
+    saat: "07:45",
     ilceler: ilceler(
       "Aliağa", "Balçova", "Bayındır", "Bayraklı", "Bergama",
       "Beydağ", "Bornova", "Buca", "Çeşme", "Çiğli",
@@ -442,7 +442,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Kahramanmaraş",
     slug: "kahramanmaras",
-    saat: "06:21",
+    saat: "07:06",
     ilceler: ilceler(
       "Afşin", "Andırın", "Çağlayancerit", "Dulkadiroğlu",
       "Ekinözü", "Elbistan", "Göksun", "Nurhak",
@@ -452,7 +452,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Karabük",
     slug: "karabuk",
-    saat: "06:26",
+    saat: "07:25",
     ilceler: ilceler(
       "Eflani", "Eskipazar", "Merkez", "Ovacık",
       "Safranbolu", "Yenice"
@@ -461,7 +461,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Karaman",
     slug: "karaman",
-    saat: "06:30",
+    saat: "07:21",
     ilceler: ilceler(
       "Ayrancı", "Başyayla", "Ermenek", "Kazımkarabekir",
       "Merkez", "Sarıveliler"
@@ -470,7 +470,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Kars",
     slug: "kars",
-    saat: "05:57",
+    saat: "06:42",
     ilceler: ilceler(
       "Akyaka", "Arpaçay", "Digor", "Kağızman",
       "Merkez", "Sarıkamış", "Selim", "Susuz"
@@ -479,7 +479,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Kastamonu",
     slug: "kastamonu",
-    saat: "06:23",
+    saat: "07:20",
     ilceler: ilceler(
       "Abana", "Ağlı", "Araç", "Azdavay", "Bozkurt",
       "Cide", "Çatalzeytin", "Daday", "Devrekani", "Doğanyurt",
@@ -490,7 +490,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Kayseri",
     slug: "kayseri",
-    saat: "06:23",
+    saat: "07:12",
     ilceler: ilceler(
       "Akkışla", "Bünyan", "Develi", "Felahiye", "Hacılar",
       "İncesu", "Kocasinan", "Melikgazi", "Özvatan", "Pınarbaşı",
@@ -501,7 +501,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Kırıkkale",
     slug: "kirikkale",
-    saat: "06:27",
+    saat: "07:20",
     ilceler: ilceler(
       "Bahşili", "Balışeyh", "Çelebi", "Delice",
       "Karakeçili", "Keskin", "Merkez", "Sulakyurt", "Yahşihan"
@@ -510,7 +510,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Kırklareli",
     slug: "kirklareli",
-    saat: "06:46",
+    saat: "07:46",
     ilceler: ilceler(
       "Babaeski", "Demirköy", "Kofçaz", "Lüleburgaz",
       "Merkez", "Pehlivanköy", "Pınarhisar", "Vize"
@@ -519,7 +519,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Kırşehir",
     slug: "kirsehir",
-    saat: "06:26",
+    saat: "07:18",
     ilceler: ilceler(
       "Akçakent", "Akpınar", "Boztepe", "Çiçekdağı",
       "Kaman", "Merkez", "Mucur"
@@ -528,7 +528,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Kilis",
     slug: "kilis",
-    saat: "06:22",
+    saat: "07:05",
     ilceler: ilceler(
       "Elbeyli", "Merkez", "Musabeyli", "Polateli"
     ),
@@ -536,7 +536,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Kocaeli",
     slug: "kocaeli",
-    saat: "06:37",
+    saat: "07:35",
     ilceler: ilceler(
       "Başiskele", "Çayırova", "Darıca", "Derince", "Dilovası",
       "Gebze", "Gölcük", "İzmit", "Kandıra", "Karamürsel",
@@ -546,7 +546,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Konya",
     slug: "konya",
-    saat: "06:32",
+    saat: "07:24",
     ilceler: ilceler(
       "Ahırlı", "Akören", "Akşehir", "Altınekin", "Beyşehir",
       "Bozkır", "Cihanbeyli", "Çeltik", "Çumra", "Derbent",
@@ -559,7 +559,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Kütahya",
     slug: "kutahya",
-    saat: "06:38",
+    saat: "07:34",
     ilceler: ilceler(
       "Altıntaş", "Aslanapa", "Çavdarhisar", "Domaniç",
       "Dumlupınar", "Emet", "Gediz", "Hisarcık",
@@ -569,7 +569,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Malatya",
     slug: "malatya",
-    saat: "06:15",
+    saat: "07:01",
     ilceler: ilceler(
       "Akçadağ", "Arapgir", "Arguvan", "Battalgazi", "Darende",
       "Doğanşehir", "Doğanyol", "Hekimhan", "Kale", "Kuluncak",
@@ -579,7 +579,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Manisa",
     slug: "manisa",
-    saat: "06:44",
+    saat: "07:44",
     ilceler: ilceler(
       "Ahmetli", "Akhisar", "Alaşehir", "Demirci", "Gölmarmara",
       "Gördes", "Kırkağaç", "Köprübaşı", "Kula", "Salihli",
@@ -590,7 +590,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Mardin",
     slug: "mardin",
-    saat: "06:10",
+    saat: "06:51",
     ilceler: ilceler(
       "Artuklu", "Dargeçit", "Derik", "Kızıltepe", "Mazıdağı",
       "Midyat", "Nusaybin", "Ömerli", "Savur", "Yeşilli"
@@ -599,7 +599,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Mersin",
     slug: "mersin",
-    saat: "06:29",
+    saat: "07:15",
     ilceler: ilceler(
       "Akdeniz", "Anamur", "Aydıncık", "Bozyazı", "Çamlıyayla",
       "Erdemli", "Gülnar", "Mezitli", "Mut", "Silifke",
@@ -609,7 +609,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Muğla",
     slug: "mugla",
-    saat: "06:42",
+    saat: "07:40",
     ilceler: ilceler(
       "Bodrum", "Dalaman", "Datça", "Fethiye", "Kavaklıdere",
       "Köyceğiz", "Marmaris", "Menteşe", "Milas", "Ortaca",
@@ -619,7 +619,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Muş",
     slug: "mus",
-    saat: "06:04",
+    saat: "06:48",
     ilceler: ilceler(
       "Bulanık", "Hasköy", "Korkut", "Malazgirt", "Merkez", "Varto"
     ),
@@ -627,7 +627,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Nevşehir",
     slug: "nevsehir",
-    saat: "06:26",
+    saat: "07:15",
     ilceler: ilceler(
       "Acıgöl", "Avanos", "Derinkuyu", "Gülşehir",
       "Hacıbektaş", "Kozaklı", "Merkez", "Ürgüp"
@@ -636,7 +636,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Niğde",
     slug: "nigde",
-    saat: "06:27",
+    saat: "07:15",
     ilceler: ilceler(
       "Altunhisar", "Bor", "Çamardı", "Çiftlik",
       "Merkez", "Ulukışla"
@@ -645,7 +645,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Ordu",
     slug: "ordu",
-    saat: "06:12",
+    saat: "07:03",
     ilceler: ilceler(
       "Akkuş", "Altınordu", "Aybastı", "Çamaş", "Çatalpınar",
       "Çaybaşı", "Fatsa", "Gölköy", "Gülyalı", "Gürgentepe",
@@ -656,7 +656,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Osmaniye",
     slug: "osmaniye",
-    saat: "06:25",
+    saat: "07:08",
     ilceler: ilceler(
       "Bahçe", "Düziçi", "Hasanbeyli", "Kadirli",
       "Merkez", "Sumbas", "Toprakkale"
@@ -665,7 +665,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Rize",
     slug: "rize",
-    saat: "06:04",
+    saat: "06:53",
     ilceler: ilceler(
       "Ardeşen", "Çamlıhemşin", "Çayeli", "Derepazarı",
       "Fındıklı", "Güneysu", "Hemşin", "İkizdere",
@@ -675,7 +675,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Sakarya",
     slug: "sakarya",
-    saat: "06:34",
+    saat: "07:33",
     ilceler: ilceler(
       "Adapazarı", "Akyazı", "Arifiye", "Erenler", "Ferizli",
       "Geyve", "Hendek", "Karapürçek", "Karasu", "Kaynarca",
@@ -685,7 +685,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Samsun",
     slug: "samsun",
-    saat: "06:16",
+    saat: "07:10",
     ilceler: ilceler(
       "Alaçam", "Asarcık", "Atakum", "Ayvacık", "Bafra",
       "Canik", "Çarşamba", "Havza", "İlkadım", "Kavak",
@@ -696,7 +696,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Şanlıurfa",
     slug: "sanliurfa",
-    saat: "06:15",
+    saat: "06:58",
     ilceler: ilceler(
       "Akçakale", "Birecik", "Bozova", "Ceylanpınar",
       "Eyyübiye", "Halfeti", "Haliliye", "Harran",
@@ -706,7 +706,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Siirt",
     slug: "siirt",
-    saat: "06:07",
+    saat: "06:46",
     ilceler: ilceler(
       "Baykan", "Eruh", "Kurtalan", "Merkez",
       "Pervari", "Şirvan", "Tillo"
@@ -715,7 +715,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Sinop",
     slug: "sinop",
-    saat: "06:19",
+    saat: "07:15",
     ilceler: ilceler(
       "Ayancık", "Boyabat", "Dikmen", "Durağan",
       "Erfelek", "Gerze", "Merkez", "Saraydüzü", "Türkeli"
@@ -724,7 +724,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Şırnak",
     slug: "sirnak",
-    saat: "06:06",
+    saat: "06:44",
     ilceler: ilceler(
       "Beytüşşebap", "Cizre", "Güçlükonak", "İdil",
       "Merkez", "Silopi", "Uludere"
@@ -733,7 +733,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Sivas",
     slug: "sivas",
-    saat: "06:16",
+    saat: "07:06",
     ilceler: ilceler(
       "Akıncılar", "Altınyayla", "Divriği", "Doğanşar",
       "Gemerek", "Gölova", "Gürün", "Hafik", "İmranlı",
@@ -744,7 +744,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Tekirdağ",
     slug: "tekirdag",
-    saat: "06:45",
+    saat: "07:45",
     ilceler: ilceler(
       "Çerkezköy", "Çorlu", "Ergene", "Hayrabolu",
       "Kapaklı", "Malkara", "Marmaraereğlisi", "Muratlı",
@@ -754,7 +754,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Tokat",
     slug: "tokat",
-    saat: "06:16",
+    saat: "07:08",
     ilceler: ilceler(
       "Almus", "Artova", "Başçiftlik", "Erbaa", "Merkez",
       "Niksar", "Pazar", "Reşadiye", "Sulusaray", "Turhal",
@@ -764,7 +764,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Trabzon",
     slug: "trabzon",
-    saat: "06:06",
+    saat: "06:56",
     ilceler: ilceler(
       "Akçaabat", "Araklı", "Arsin", "Beşikdüzü", "Çarşıbaşı",
       "Çaykara", "Dernekpazarı", "Düzköy", "Hayrat", "Köprübaşı",
@@ -775,7 +775,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Tunceli",
     slug: "tunceli",
-    saat: "06:10",
+    saat: "06:56",
     ilceler: ilceler(
       "Çemişgezek", "Hozat", "Mazgirt", "Merkez",
       "Nazımiye", "Ovacık", "Pertek", "Pülümür"
@@ -784,7 +784,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Uşak",
     slug: "usak",
-    saat: "06:40",
+    saat: "07:36",
     ilceler: ilceler(
       "Banaz", "Eşme", "Karahallı", "Merkez", "Sivaslı", "Ulubey"
     ),
@@ -792,7 +792,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Van",
     slug: "van",
-    saat: "05:58",
+    saat: "06:40",
     ilceler: ilceler(
       "Bahçesaray", "Başkale", "Çaldıran", "Çatak", "Edremit",
       "Erciş", "Gevaş", "Gürpınar", "İpekyolu", "Muradiye",
@@ -802,7 +802,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Yalova",
     slug: "yalova",
-    saat: "06:38",
+    saat: "07:38",
     ilceler: ilceler(
       "Altınova", "Armutlu", "Çiftlikköy", "Çınarcık",
       "Merkez", "Termal"
@@ -811,7 +811,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Yozgat",
     slug: "yozgat",
-    saat: "06:23",
+    saat: "07:15",
     ilceler: ilceler(
       "Akdağmadeni", "Aydıncık", "Boğazlıyan", "Çandır",
       "Çayıralan", "Çekerek", "Kadışehri", "Merkez",
@@ -822,7 +822,7 @@ export const namazSaatleri: IlDetay[] = [
   {
     il: "Zonguldak",
     slug: "zonguldak",
-    saat: "06:29",
+    saat: "07:28",
     ilceler: ilceler(
       "Alaplı", "Çaycuma", "Devrek", "Gökçebey",
       "Kilimli", "Kozlu", "Merkez"

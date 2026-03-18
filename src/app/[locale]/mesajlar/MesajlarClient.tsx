@@ -1,22 +1,31 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import {
-  mesajlar,
-  CATEGORY_LABELS,
   CATEGORY_EMOJIS,
   type Category,
 } from "@/lib/bayram-mesajlari";
 import MessageCard from "@/components/MessageCard";
 import AdSlot from "@/components/AdSlot";
+import type { BayramMesaj } from "@/lib/bayram-mesajlari";
 
 const categories: Category[] = ["genel", "aile", "resmi", "komik", "dua"];
 
 export default function MesajlarClient() {
+  const t = useTranslations("messages");
+  const tRoot = useTranslations();
   const [active, setActive] = useState<Category>("genel");
 
-  const filtered = mesajlar.filter((m) => m.category === active);
+  const bayramMessages = tRoot.raw("bayramMessages") as Record<string, string[]>;
+  const currentMessages = bayramMessages[active] || [];
+
+  const filtered: BayramMesaj[] = currentMessages.map((text, i) => ({
+    id: i + 1,
+    text,
+    category: active,
+  }));
 
   return (
     <>
@@ -33,7 +42,7 @@ export default function MesajlarClient() {
             }`}
           >
             <span>{CATEGORY_EMOJIS[cat]}</span>
-            {CATEGORY_LABELS[cat]}
+            {t(`categories.${cat}`)}
           </button>
         ))}
       </div>

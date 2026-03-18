@@ -1,16 +1,20 @@
 "use client";
 
 import { useState } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter } from "@/i18n/navigation";
+import { useTranslations } from "next-intl";
 import { motion, AnimatePresence } from "framer-motion";
 import { Sparkles, MessageSquare, ChevronDown } from "lucide-react";
-import { DEFAULT_MESSAGES } from "@/lib/constants";
 
 export default function NameForm() {
+  const t = useTranslations("home");
+  const tRoot = useTranslations();
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
   const [showMessage, setShowMessage] = useState(false);
   const router = useRouter();
+
+  const defaultMessages = tRoot.raw("defaultMessages") as string[];
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -18,7 +22,7 @@ export default function NameForm() {
     if (trimmed.length >= 2 && trimmed.length <= 50) {
       const msg = message.trim();
       const params = msg ? `?m=${encodeURIComponent(msg)}&created=1` : `?created=1`;
-      router.push(`/t/${encodeURIComponent(trimmed)}${params}`);
+      router.push(`/t/${encodeURIComponent(trimmed)}${params}` as never);
     }
   };
 
@@ -33,7 +37,7 @@ export default function NameForm() {
       transition={{ type: "spring", damping: 15, stiffness: 100 }}
     >
       <label htmlFor="name-input" className="text-white/70 text-sm font-medium text-center">
-        İsmini yaz, tebrik kartın hazırlansın
+        {t("nameLabel")}
       </label>
 
       <motion.input
@@ -41,7 +45,7 @@ export default function NameForm() {
         type="text"
         value={name}
         onChange={(e) => setName(e.target.value)}
-        placeholder="Örn: Ahmet"
+        placeholder={t("namePlaceholder")}
         maxLength={50}
         className="w-full px-5 py-3.5 rounded-xl bg-white/5 border border-gold/30 text-white text-lg text-center placeholder:text-white/30 focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20 transition-all duration-200"
         autoFocus
@@ -58,7 +62,7 @@ export default function NameForm() {
         whileTap={{ scale: 0.95 }}
       >
         <MessageSquare size={14} />
-        Özel mesaj ekle
+        {t("addMessage")}
         <motion.span
           animate={{ rotate: showMessage ? 180 : 0 }}
           transition={{ duration: 0.2 }}
@@ -79,14 +83,14 @@ export default function NameForm() {
             <textarea
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              placeholder="Mesajını yaz..."
+              placeholder={t("messagePlaceholder")}
               maxLength={200}
               rows={3}
               className="w-full px-4 py-3 rounded-xl bg-white/5 border border-gold/20 text-white text-sm placeholder:text-white/30 focus:outline-none focus:border-gold/50 focus:ring-2 focus:ring-gold/10 transition-all duration-200 resize-none"
             />
             {/* Quick message templates */}
             <div className="flex flex-wrap gap-2">
-              {DEFAULT_MESSAGES.map((msg, i) => (
+              {defaultMessages.map((msg: string, i: number) => (
                 <motion.button
                   key={i}
                   type="button"
@@ -114,7 +118,7 @@ export default function NameForm() {
         whileTap={isValid ? { scale: 0.95 } : {}}
       >
         <Sparkles size={20} />
-        Tebrik oluştur
+        {t("createButton")}
       </motion.button>
     </motion.form>
   );

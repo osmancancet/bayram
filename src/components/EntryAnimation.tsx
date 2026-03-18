@@ -1,13 +1,49 @@
 "use client";
 
+import { useTranslations, useLocale } from "next-intl";
 import { motion } from "framer-motion";
 import { Moon, Star } from "lucide-react";
+import { rtlLocales, type Locale } from "@/i18n/config";
 
 interface EntryAnimationProps {
   onComplete: () => void;
 }
 
 export default function EntryAnimation({ onComplete }: EntryAnimationProps) {
+  const t = useTranslations("home");
+  const locale = useLocale();
+  const isRtl = rtlLocales.includes(locale as Locale);
+
+  const animateText = (text: string, keyPrefix: string, delayStart: number) => {
+    if (isRtl) {
+      // Word-by-word for RTL (Arabic connected script can't be split by char)
+      const words = text.split(" ");
+      return words.map((word, i) => (
+        <motion.span
+          key={`${keyPrefix}-${i}`}
+          className="text-shimmer bg-gradient-to-r from-gold via-gold-light to-gold bg-clip-text text-transparent inline-block"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: delayStart + i * 0.15, type: "spring", damping: 12 }}
+        >
+          {i < words.length - 1 ? word + "\u00A0" : word}
+        </motion.span>
+      ));
+    }
+    // Letter-by-letter for LTR
+    return text.split("").map((char, i) => (
+      <motion.span
+        key={`${keyPrefix}-${i}`}
+        className="text-shimmer bg-gradient-to-r from-gold via-gold-light to-gold bg-clip-text text-transparent inline-block"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: delayStart + i * 0.04, type: "spring", damping: 12 }}
+      >
+        {char === " " ? "\u00A0" : char}
+      </motion.span>
+    ));
+  };
+
   return (
     <motion.div
       className="flex flex-col items-center justify-center gap-6 px-4"
@@ -50,7 +86,7 @@ export default function EntryAnimation({ onComplete }: EntryAnimationProps) {
         </motion.div>
       </div>
 
-      {/* Main Text with letter-by-letter animation */}
+      {/* Main Text */}
       <motion.h1
         className="text-3xl sm:text-4xl md:text-6xl font-bold text-center leading-tight"
         initial={{ opacity: 0 }}
@@ -59,30 +95,10 @@ export default function EntryAnimation({ onComplete }: EntryAnimationProps) {
         onAnimationComplete={onComplete}
       >
         <span className="block">
-          {"Ramazan Bayramınız".split("").map((char, i) => (
-            <motion.span
-              key={`r-${i}`}
-              className="text-shimmer bg-gradient-to-r from-gold via-gold-light to-gold bg-clip-text text-transparent inline-block"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.6 + i * 0.04, type: "spring", damping: 12 }}
-            >
-              {char === " " ? "\u00A0" : char}
-            </motion.span>
-          ))}
+          {animateText(t("line1"), "r", 0.6)}
         </span>
         <span className="block mt-2">
-          {"Mübarek Olsun".split("").map((char, i) => (
-            <motion.span
-              key={`m-${i}`}
-              className="text-shimmer bg-gradient-to-r from-gold-light via-gold to-gold-light bg-clip-text text-transparent inline-block"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1.2 + i * 0.04, type: "spring", damping: 12 }}
-            >
-              {char === " " ? "\u00A0" : char}
-            </motion.span>
-          ))}
+          {animateText(t("line2"), "m", 1.2)}
         </span>
       </motion.h1>
 
@@ -102,7 +118,7 @@ export default function EntryAnimation({ onComplete }: EntryAnimationProps) {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 2.2, duration: 0.6 }}
       >
-        Sevdiklerine özel bayram kartı oluştur
+        {t("subtitle")}
       </motion.p>
     </motion.div>
   );

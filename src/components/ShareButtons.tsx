@@ -1,11 +1,11 @@
 "use client";
 
 import { useState, useCallback, useMemo } from "react";
-import { usePathname } from "next/navigation";
+import { usePathname } from "@/i18n/navigation";
+import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { Send, Link } from "lucide-react";
 import { openWhatsApp, copyToClipboard } from "@/lib/share";
-import { MESSAGES } from "@/lib/constants";
 import Toast from "./Toast";
 
 interface ShareButtonsProps {
@@ -14,6 +14,8 @@ interface ShareButtonsProps {
 }
 
 export default function ShareButtons({ name, message }: ShareButtonsProps) {
+  const t = useTranslations("share");
+  const tWa = useTranslations("whatsapp");
   const [showToast, setShowToast] = useState(false);
   const pathname = usePathname();
 
@@ -26,8 +28,8 @@ export default function ShareButtons({ name, message }: ShareButtonsProps) {
 
   const handleShare = () => {
     const msg = message
-      ? MESSAGES.custom(name, url, message)
-      : MESSAGES.general(name, url);
+      ? tWa("customMessage", { message, name, url })
+      : tWa("shareMessage", { name, url });
     openWhatsApp(msg);
   };
 
@@ -53,7 +55,7 @@ export default function ShareButtons({ name, message }: ShareButtonsProps) {
           whileTap={{ scale: 0.95 }}
         >
           <Send size={20} />
-          WhatsApp ile paylaş
+          {t("whatsapp")}
         </motion.button>
 
         <motion.button
@@ -66,12 +68,12 @@ export default function ShareButtons({ name, message }: ShareButtonsProps) {
           whileTap={{ scale: 0.95 }}
         >
           <Link size={16} />
-          Linki kopyala
+          {t("copyLink")}
         </motion.button>
       </div>
 
       <Toast
-        message="Link kopyalandı!"
+        message={t("linkCopied")}
         isVisible={showToast}
         onClose={handleCloseToast}
       />

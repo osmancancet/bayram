@@ -1,0 +1,184 @@
+{
+  "meta": {
+    "siteTitle": "Digital Bayram | Eid al-Fitr 2026",
+    "siteDescription": "Digital Bayram — create a personalized Eid greeting card and share it via WhatsApp. Eid messages and prayer times.",
+    "ogDescription": "Digital Bayram — create a personalized Eid greeting card and share via WhatsApp.",
+    "keywords": "eid mubarak, eid al-fitr, eid greeting card, eid messages, ramadan eid 2026, eid prayer times",
+    "greetingDescription": "{name} is sending you an Eid greeting card",
+    "messagesTitle": "Eid al-Fitr Messages 2026 | Best Eid Greetings",
+    "messagesDescription": "Beautiful Eid al-Fitr messages. Family, formal, fun and prayer messages. Copy or send via WhatsApp.",
+    "prayerTimesTitle": "Eid Prayer Times 2026 — All Cities | Eid al-Fitr",
+    "prayerTimesDescription": "2026 Eid al-Fitr prayer times. Find Eid prayer times for all 81 Turkish provinces and districts.",
+    "prayerGuideTitle": "How to Perform Eid Prayer? | Step by Step Guide",
+    "prayerGuideDescription": "How to perform Eid prayer? How many rakats, which takbeers, what prayers? Step by step Eid prayer guide."
+  },
+  "nav": {
+    "greeting": "Greeting",
+    "messages": "Messages",
+    "prayerTimes": "Prayer Times",
+    "siteName": "Digital Bayram"
+  },
+  "home": {
+    "line1": "Eid Mubarak",
+    "line2": "Happy Eid al-Fitr",
+    "subtitle": "Create a personalized Eid greeting card for your loved ones",
+    "nameLabel": "Enter your name to create your greeting card",
+    "namePlaceholder": "e.g. Ahmed",
+    "addMessage": "Add a custom message",
+    "messagePlaceholder": "Write your message...",
+    "createButton": "Create greeting"
+  },
+  "greeting": {
+    "defaultMessage": "May this blessed Eid bring peace, happiness and prosperity to you and your family.",
+    "line1": "Eid Mubarak",
+    "line2": "Happy Eid al-Fitr"
+  },
+  "share": {
+    "whatsapp": "Share via WhatsApp",
+    "copyLink": "Copy link",
+    "linkCopied": "Link copied!"
+  },
+  "cta": {
+    "separator": "try it yourself",
+    "title": "🌙 Create your own Eid card",
+    "subtitle": "Send personalized Eid greetings to your loved ones",
+    "bayramCard": "eid card",
+    "createCard": "🌙 Create your own Eid card"
+  },
+  "messages": {
+    "pageTitle": "Eid Messages",
+    "pageSubtitle": "Copy or send via WhatsApp",
+    "copy": "Copy",
+    "copied": "Copied",
+    "send": "Send",
+    "categories": {
+      "genel": "General",
+      "aile": "Family",
+      "resmi": "Formal",
+      "komik": "Fun",
+      "dua": "Prayers"
+    }
+  },
+  "prayerTimes": {
+    "date": "March 20, 2026",
+    "pageTitle": "Eid Prayer Times",
+    "pageSubtitle": "Eid prayer times for all 81 provinces and districts",
+    "searchPlaceholder": "Search city...",
+    "noResults": "No results found",
+    "prayerGuideLink": "🕌 How to perform Eid prayer?",
+    "prayerGuideSub": "Step by step Eid prayer guide",
+    "seeTimesButton": "🕌 See Eid Prayer Times",
+    "whatTime": "What Time is Eid Prayer?",
+    "whatTimeDesc": "Eid prayer time is approximately 45-50 minutes after sunrise and varies by city. Select your city to find out the Eid prayer time:",
+    "districts": "Districts",
+    "otherDistricts": "For other districts",
+    "clickHere": "click here",
+    "home": "Home",
+    "prayerTimesLabel": "Prayer Times",
+    "bayramPrayerTime": "Eid Prayer Time",
+    "allDistricts": "All Districts"
+  },
+  "prayerGuide": {
+    "badge": "Guide",
+    "title": "How to Perform Eid Prayer?",
+    "subtitle": "Step by step Eid prayer guide — takbeers and prayers",
+    "whatIs": "What is Eid Prayer?",
+    "whatIsDesc": "Eid prayer is a 2-rakat prayer performed on the morning of Eid al-Fitr and Eid al-Adha. According to the Hanafi school, it is wajib (obligatory), while other schools consider it sunnah muakkadah. Eid prayer is performed in congregation at mosques, followed by a khutbah.",
+    "howMany": "How Many Rakats is Eid Prayer?",
+    "howManyDesc": "Eid prayer is <strong>2 rakats</strong>. Unlike regular prayers, additional takbeers (zawaid takbeers) are recited in each rakat. 3 extra takbeers in the first rakat and 3 in the second, totaling 6 additional takbeers.",
+    "stepByStep": "How to Perform Eid Prayer (Step by Step)",
+    "step1Title": "Intention and Opening Takbeer",
+    "step1Desc": "Make the intention: \"I intend to pray the Eid prayer for the sake of Allah.\" Raise your hands and say \"Allahu Akbar\" for the opening takbeer to begin the prayer.",
+    "step2Title": "Recite Subhanaka",
+    "step2Desc": "After the opening takbeer, recite the Subhanaka prayer.",
+    "step3Title": "First Rakat — 3 Extra Takbeers",
+    "step3Desc": "After Subhanaka, the imam says \"Allahu Akbar\" 3 times. With each takbeer, raise your hands to your ears and let them drop to your sides. After the third takbeer, fold your hands.",
+    "step4Title": "Recite Fatiha and a Surah",
+    "step4Desc": "The imam recites Surah al-Fatiha followed by another surah. Then bow for ruku and prostrate for sujud as in regular prayer. The first rakat is complete.",
+    "step5Title": "Second Rakat — Standing",
+    "step5Desc": "Stand up for the second rakat. The imam first recites Fatiha and a surah.",
+    "step6Title": "Second Rakat — 3 Extra Takbeers",
+    "step6Desc": "After the surah, the imam says \"Allahu Akbar\" 3 times. With each takbeer, raise and lower your hands. After the third takbeer, go directly into ruku (do not fold hands).",
+    "step7Title": "Prayer is Completed",
+    "step7Desc": "After ruku and sujud, sit and recite Ettehiyyatu, Allahumma Salli, Allahumma Barik and Rabbana prayers. Give salam to complete the prayer.",
+    "step8Title": "Listen to the Khutbah",
+    "step8Desc": "In Eid prayer, the khutbah is delivered after the prayer (unlike Friday prayer). Listening to the khutbah is sunnah.",
+    "duaTitle": "Eid Prayer Dua",
+    "tekbirLabel": "Takbeer",
+    "tekbirText": "Allahu Akbar, Allahu Akbar. La ilaha illallahu wallahu Akbar. Allahu Akbar wa lillahi'l-hamd.",
+    "afterPrayerLabel": "Dua After Eid Prayer",
+    "afterPrayerText": "O Allah! On this blessed day of Eid, accept our prayers. Grant the Ummah of Muhammad unity, togetherness and peace. Make our Eid blessed. Amin.",
+    "faqTitle": "Frequently Asked Questions",
+    "faq1Q": "How many rakats is Eid prayer?",
+    "faq1A": "Eid prayer is 2 rakats. Extra takbeers are recited in both rakats. 3 extra takbeers in the first rakat and 3 in the second.",
+    "faq2Q": "Is Eid prayer obligatory?",
+    "faq2A": "According to the Hanafi school, Eid prayer is wajib (obligatory). According to the Shafi'i school, it is sunnah muakkadah. Both views agree that performing it carries great reward.",
+    "faq3Q": "What time is Eid prayer?",
+    "faq3A": "Eid prayer is performed approximately 45-50 minutes after sunrise. The exact time varies by city. You can find your city's Eid prayer time on our website.",
+    "faq4Q": "How many people are needed for Eid prayer?",
+    "faq4A": "According to the Hanafi school, Eid prayer is performed in congregation and requires at least 4 people (including the imam). It cannot be prayed alone. Other schools allow individual prayer.",
+    "faq5Q": "Can women pray Eid prayer?",
+    "faq5A": "Yes, women can pray Eid prayer. They can participate in Eid prayer in the sections designated for women in mosques.",
+    "faq6Q": "Is it sinful to miss Eid prayer?",
+    "faq6A": "According to the Hanafi school, since Eid prayer is wajib, missing it without a valid excuse is sinful. However, it cannot be made up (qada)."
+  },
+  "footer": {
+    "text": "Eid Mubarak"
+  },
+  "whatsapp": {
+    "shareMessage": "May this blessed Eid bring peace, happiness and prosperity to you and your family. Eid Mubarak!\n-{name}\n\nClick to see the Eid greeting card I created for you.\n{url}\n\nEid Mubarak! 🤲",
+    "customMessage": "{message}\n-{name}\n\nClick to see the Eid greeting card I created for you.\n{url}\n\nEid Mubarak! 🤲"
+  },
+  "defaultMessages": [
+    "May this blessed Eid bring peace, happiness and prosperity to you and your family.",
+    "Wishing you and your loved ones a joyful and blessed Eid al-Fitr.",
+    "May the blessings of Ramadan continue to shine upon you this Eid.",
+    "Eid Mubarak! May your celebrations be filled with joy and togetherness.",
+    "On this beautiful day of Eid, may your heart be filled with happiness and gratitude.",
+    "May Allah accept your fasting, prayers and good deeds. Eid Mubarak!",
+    "Wishing you a wonderful Eid celebration surrounded by your loved ones.",
+    "May this Eid bring peace to your heart and blessings to your home."
+  ],
+  "bayramMessages": {
+    "genel": [
+      "Eid Mubarak! Wishing you and your loved ones a blessed and joyful celebration.",
+      "May this blessed Eid bring peace, happiness and prosperity to you and your family. Happy Eid!",
+      "May the joy, happiness and blessings of Eid be with you always. Many happy returns.",
+      "Wishing you a blessed Eid al-Fitr filled with peace, love and happiness!",
+      "On this beautiful day, I extend my warmest Eid greetings to you from the bottom of my heart.",
+      "May your Eid table be blessed, your smiles abundant, and your loved ones near. Happy Eid!",
+      "On this blessed Eid, may hearts unite, tables be filled, and prayers be accepted. Eid Mubarak!",
+      "May this Eid al-Fitr bring goodness to the entire Muslim Ummah. Eid Mubarak."
+    ],
+    "aile": [
+      "My dear family, we are blessed to be together this Eid. I love you all so much. Happy Eid!",
+      "Dear Mom / Dad, I kiss your hands and wish you a blessed Eid. May you have many healthy and peaceful Eids.",
+      "Dear family, even though I'm far away, my heart is with you. Wishing you all the best this Eid.",
+      "Sending love to our grandparents. Your prayers are with us, your love is in our hearts. Eid Mubarak!",
+      "Dear sibling, I cherish growing up with you and sharing the same table. Happy Eid!",
+      "May the joy, unity and love of our family last forever. This Eid, may our hearts be united and our table blessed."
+    ],
+    "resmi": [
+      "Dear colleagues, I extend my warmest Eid greetings and wish you health and happiness.",
+      "May Eid bring peace and prosperity to our professional lives as well. Happy Eid.",
+      "It is a great pleasure working with you. Wishing you and your family a blessed Eid.",
+      "Dear teacher, wishing you a healthy and peaceful Eid. Eid Mubarak.",
+      "We wish our valued clients and business partners a blessed Eid al-Fitr."
+    ],
+    "komik": [
+      "I'm waiting for my Eid gift money, just so you know! 😄 Jokes aside, Eid Mubarak!",
+      "If you gained weight during Eid, don't worry — everyone did. The important thing is leaving the table happy! Happy Eid 🍬",
+      "I'm lining up to kiss hands — not counting the gift money, but not not counting it either. Happy Eid! 💰",
+      "What do you love more during Eid visits — tea or baklava? I love both. Eid Mubarak! 🍵",
+      "Ramadan is over but I'm still checking the iftar time out of habit. Have a wonderful Eid! 😅",
+      "I wanted to be the first to send this Eid message. If I'm late, at least my intentions were good! Happy Eid! 🏃"
+    ],
+    "dua": [
+      "May Allah fill your heart with peace, your home with blessings, and your life with health this Eid. Amin. Eid Mubarak.",
+      "May Allah accept your prayers, forgive your sins, and unite you with your loved ones this blessed Eid.",
+      "May every prayer made this Eid be answered, and every fast be accepted. May Allah bless your Eid.",
+      "O Allah, grant the Ummah unity, togetherness and peace this Eid. Eid Mubarak.",
+      "O Allah, do not separate us from our loved ones, do not leave our tables empty, and do not turn away our prayers. Eid Mubarak."
+    ]
+  }
+}

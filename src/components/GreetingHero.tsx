@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { Star, Moon } from "lucide-react";
 
@@ -9,7 +10,8 @@ interface GreetingHeroProps {
 }
 
 export default function GreetingHero({ name, message }: GreetingHeroProps) {
-  const displayMessage = message || "Bu mübarek günlerde tüm dualarınız kabul olsun, sofranız bereketli, yüzünüz güleç olsun.";
+  const t = useTranslations("greeting");
+  const displayMessage = message || t("defaultMessage");
 
   return (
     <motion.div
@@ -32,7 +34,7 @@ export default function GreetingHero({ name, message }: GreetingHeroProps) {
         </motion.div>
       </motion.div>
 
-      {/* Decorative stars — reduced to 3 */}
+      {/* Decorative stars */}
       <motion.div
         className="flex items-center gap-4"
         initial={{ opacity: 0 }}
@@ -54,7 +56,7 @@ export default function GreetingHero({ name, message }: GreetingHeroProps) {
         ))}
       </motion.div>
 
-      {/* Main greeting — static glow, no textShadow animation */}
+      {/* Main greeting */}
       <motion.h1
         className="text-4xl sm:text-5xl md:text-7xl font-bold leading-tight"
         initial={{ opacity: 0, y: 60, scale: 0.7 }}
@@ -62,11 +64,11 @@ export default function GreetingHero({ name, message }: GreetingHeroProps) {
         transition={{ type: "spring", damping: 12, stiffness: 80, delay: 0.4 }}
       >
         <span className="text-shimmer bg-gradient-to-r from-gold via-gold-light to-gold bg-clip-text text-transparent inline-block">
-          Ramazan Bayramınız
+          {t("line1")}
         </span>
         <br />
         <span className="text-shimmer bg-gradient-to-r from-gold-light via-gold to-gold-light bg-clip-text text-transparent inline-block">
-          Mübarek Olsun
+          {t("line2")}
         </span>
       </motion.h1>
 

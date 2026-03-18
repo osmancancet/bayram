@@ -1,18 +1,20 @@
 "use client";
 
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { useTranslations } from "next-intl";
+import { Link, usePathname } from "@/i18n/navigation";
 import { motion } from "framer-motion";
 import { MessageSquareText, Clock, Sparkles } from "lucide-react";
-
-const navItems = [
-  { href: "/", label: "Tebrik", icon: Sparkles },
-  { href: "/mesajlar", label: "Mesajlar", icon: MessageSquareText },
-  { href: "/namaz-saatleri", label: "Namaz Saatleri", icon: Clock },
-];
+import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function Header() {
+  const t = useTranslations("nav");
   const pathname = usePathname();
+
+  const navItems = [
+    { href: "/" as const, label: t("greeting"), icon: Sparkles },
+    { href: "/mesajlar" as const, label: t("messages"), icon: MessageSquareText },
+    { href: "/namaz-saatleri" as const, label: t("prayerTimes"), icon: Clock },
+  ];
 
   const isActive = (href: string) => {
     if (href === "/") return pathname === "/";
@@ -33,7 +35,7 @@ export default function Header() {
           <Link href="/" className="flex items-center gap-2 group">
             <span className="text-lg">🌙</span>
             <span className="text-sm font-semibold text-gold/90 group-hover:text-gold transition-colors">
-              Dijital Bayram
+              {t("siteName")}
             </span>
           </Link>
 
@@ -64,6 +66,9 @@ export default function Header() {
                 </Link>
               );
             })}
+            <div className="ms-2 border-s border-white/10 ps-2">
+              <LanguageSwitcher />
+            </div>
           </nav>
         </div>
       </motion.header>

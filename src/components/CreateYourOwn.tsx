@@ -1,10 +1,13 @@
 "use client";
 
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { motion } from "framer-motion";
 import { Sparkles } from "lucide-react";
 
 export default function CreateYourOwn() {
+  const t = useTranslations("cta");
+
   return (
     <motion.div
       className="w-full max-w-sm px-4"
@@ -15,7 +18,7 @@ export default function CreateYourOwn() {
       {/* Separator */}
       <div className="flex items-center gap-3 mb-4">
         <div className="flex-1 h-px bg-gradient-to-r from-transparent to-gold/20" />
-        <span className="text-gold/40 text-[10px] uppercase tracking-widest">sen de dene</span>
+        <span className="text-gold/40 text-[10px] uppercase tracking-widest">{t("separator")}</span>
         <div className="flex-1 h-px bg-gradient-to-l from-transparent to-gold/20" />
       </div>
 
@@ -28,8 +31,8 @@ export default function CreateYourOwn() {
         >
           <Sparkles size={20} className="text-gold" />
           <div className="flex flex-col items-start">
-            <span className="text-sm">🌙 Sen de tebrik kartı oluştur</span>
-            <span className="text-[10px] text-white/60">Sevdiklerine özel bayram kartı gönder</span>
+            <span className="text-sm">{t("title")}</span>
+            <span className="text-[10px] text-white/60">{t("subtitle")}</span>
           </div>
         </motion.div>
       </Link>
