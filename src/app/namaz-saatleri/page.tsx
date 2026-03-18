@@ -58,6 +58,15 @@ export default function NamazSaatleriPage() {
 
         <AdSlot slotId="namaz-index-1" format="horizontal" className="mb-6" />
 
+        {/* Bayram namazı rehberi link */}
+        <Link
+          href="/bayram-namazi"
+          className="block mb-6 p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/[0.08] hover:border-gold/20 transition-all duration-200"
+        >
+          <p className="text-white/90 text-sm font-medium">🕌 Bayram namazı nasıl kılınır?</p>
+          <p className="text-white/40 text-xs mt-1">Adım adım bayram namazı kılınışı rehberi</p>
+        </Link>
+
         {/* City selector */}
         <CitySelector />
       </div>

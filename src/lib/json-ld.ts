@@ -11,6 +11,39 @@ export function websiteJsonLd() {
   };
 }
 
+export function articleJsonLd(title: string, description: string, url: string) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: title,
+    description,
+    url: `${SITE_URL}${url}`,
+    publisher: {
+      "@type": "Organization",
+      name: SITE_NAME,
+      url: SITE_URL,
+    },
+    inLanguage: "tr",
+    datePublished: "2026-03-15",
+    dateModified: "2026-03-18",
+  };
+}
+
+export function faqJsonLd(faqs: { question: string; answer: string }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
+  };
+}
+
 export function breadcrumbJsonLd(
   items: { name: string; url: string }[]
 ) {

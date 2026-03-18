@@ -9,6 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: SITE_URL, lastModified: now, changeFrequency: "weekly", priority: 1.0 },
     { url: `${SITE_URL}/mesajlar`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
     { url: `${SITE_URL}/namaz-saatleri`, lastModified: now, changeFrequency: "yearly", priority: 0.9 },
+    { url: `${SITE_URL}/bayram-namazi`, lastModified: now, changeFrequency: "yearly", priority: 0.9 },
   ];
 
   const ilPages: MetadataRoute.Sitemap = getAllIlSlugs().map((slug) => ({
