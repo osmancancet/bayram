@@ -34,7 +34,7 @@ export async function GET(request: NextRequest) {
           alignItems: "center",
           justifyContent: "center",
           background:
-            "linear-gradient(135deg, #020617 0%, #064e3b 50%, #020617 100%)",
+            "linear-gradient(180deg, #020617 0%, #0a1628 40%, #071115 100%)",
           fontFamily: "sans-serif",
           padding: "40px",
           position: "relative",
@@ -42,34 +42,34 @@ export async function GET(request: NextRequest) {
           direction: isRtl ? "rtl" : "ltr",
         }}
       >
-        {/* Background pattern */}
+        {/* Stars background */}
         <div
           style={{
             position: "absolute",
             inset: 0,
-            opacity: 0.05,
+            opacity: 0.4,
             backgroundImage:
-              "radial-gradient(circle at 20% 50%, #f59e0b 1px, transparent 1px), radial-gradient(circle at 80% 20%, #f59e0b 1px, transparent 1px), radial-gradient(circle at 50% 80%, #f59e0b 1px, transparent 1px)",
-            backgroundSize: "60px 60px",
+              "radial-gradient(circle at 10% 15%, #ffffff 1px, transparent 1px), radial-gradient(circle at 25% 45%, #ffffff 0.5px, transparent 0.5px), radial-gradient(circle at 40% 10%, #ffffff 1px, transparent 1px), radial-gradient(circle at 55% 35%, #ffffff 0.5px, transparent 0.5px), radial-gradient(circle at 70% 20%, #ffffff 1px, transparent 1px), radial-gradient(circle at 85% 50%, #ffffff 0.5px, transparent 0.5px), radial-gradient(circle at 15% 70%, #ffffff 0.5px, transparent 0.5px), radial-gradient(circle at 90% 75%, #ffffff 1px, transparent 1px), radial-gradient(circle at 35% 85%, #ffffff 0.5px, transparent 0.5px), radial-gradient(circle at 60% 65%, #ffffff 1px, transparent 1px), radial-gradient(circle at 75% 90%, #ffffff 0.5px, transparent 0.5px), radial-gradient(circle at 5% 90%, #ffffff 1px, transparent 1px), radial-gradient(circle at 50% 55%, #ffffff 0.5px, transparent 0.5px), radial-gradient(circle at 95% 10%, #ffffff 1px, transparent 1px), radial-gradient(circle at 30% 25%, #ffffff 0.5px, transparent 0.5px), radial-gradient(circle at 80% 40%, #ffffff 1px, transparent 1px)",
+            backgroundSize: "100% 100%",
           }}
         />
 
-        {/* Decorative circles */}
+        {/* Moon emoji */}
+        <div style={{ fontSize: "72px", marginBottom: "12px" }}>🌙</div>
+
+        {/* Decorative stars */}
         <div
           style={{
-            position: "absolute",
-            top: "40px",
             display: "flex",
-            gap: "12px",
+            gap: "16px",
+            alignItems: "center",
+            marginBottom: "12px",
           }}
         >
-          <div style={{ width: "8px", height: "8px", borderRadius: "50%", background: "#f59e0b" }} />
-          <div style={{ width: "12px", height: "12px", borderRadius: "50%", background: "#fbbf24" }} />
-          <div style={{ width: "8px", height: "8px", borderRadius: "50%", background: "#f59e0b" }} />
+          <div style={{ fontSize: "14px", opacity: 0.4 }}>✦</div>
+          <div style={{ fontSize: "20px", color: "#f59e0b" }}>★</div>
+          <div style={{ fontSize: "14px", opacity: 0.4 }}>✦</div>
         </div>
-
-        {/* Moon emoji */}
-        <div style={{ fontSize: "64px", marginBottom: "16px" }}>🌙</div>
 
         {/* City-specific header */}
         {il && saat ? (
@@ -212,11 +212,11 @@ export async function GET(request: NextRequest) {
         <div
           style={{
             position: "absolute",
-            bottom: "-50px",
-            width: "400px",
-            height: "200px",
+            bottom: "-80px",
+            width: "600px",
+            height: "300px",
             borderRadius: "50%",
-            background: "radial-gradient(ellipse, rgba(245,158,11,0.15) 0%, transparent 70%)",
+            background: "radial-gradient(ellipse, rgba(245,158,11,0.08) 0%, transparent 70%)",
           }}
         />
       </div>
