@@ -27,9 +27,11 @@ export default function ShareButtons({ name, message }: ShareButtonsProps) {
   }, [pathname, message]);
 
   const handleShare = () => {
+    const cleanBase = (typeof window !== "undefined" ? window.location.origin : "") + pathname;
+    const shareUrl = decodeURIComponent(cleanBase).replace(/ /g, '%20');
     const msg = message
-      ? tWa("customMessage", { message, name, url })
-      : tWa("shareMessage", { name, url });
+      ? tWa("customMessage", { message, name, url: shareUrl })
+      : tWa("shareMessage", { name, url: shareUrl });
     openWhatsApp(msg);
   };
 
